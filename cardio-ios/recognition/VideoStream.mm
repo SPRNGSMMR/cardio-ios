@@ -6,14 +6,16 @@
 //  Copyright © 2016 Sylvain Reucherand. All rights reserved.
 //
 
-#import "IplImage.h"
 #import "VideoStream.h"
+#import "CardScanner.h"
 #import "VideoFrame.h"
 #import "Utilities.h"
 
 @interface VideoStream () {
     dmz_context *dmz;
 }
+
+@property(nonatomic, strong, readwrite) CardScanner *scanner;
 
 @property(nonatomic, strong, readwrite) AVCaptureSession *captureSession;
 @property(nonatomic, strong, readwrite) AVCaptureDevice *camera;
@@ -37,6 +39,7 @@
     if (self) {
         self.captureSession = [[AVCaptureSession alloc] init];
         self.camera = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+        self.scanner = [[CardScanner alloc] init];
         
         _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.captureSession];
         
@@ -231,8 +234,19 @@
         VideoFrame *frame = [[VideoFrame alloc] initWithSampleBuffer:sampleBuffer];
         
         frame.dmz = dmz;
+        frame.scanner = self.scanner;
         
         if (self.isRunning) {
+            NSDictionary *exifDict = (__bridge NSDictionary *)((CFDictionaryRef)CMGetAttachment(sampleBuffer, (CFStringRef)@"{Exif}", NULL));
+            
+            if (exifDict != nil) {
+                frame.isoSpeed = [exifDict[@"ISOSpeedRatings"][0] integerValue];
+                frame.shutterSpeed = [exifDict[@"ShutterSpeedValue"] floatValue];
+            } else {
+                frame.isoSpeed = 10000;
+                frame.shutterSpeed = 0;
+            }
+            
             [frame process];
         }
         

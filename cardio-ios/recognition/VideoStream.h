@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-#import "VideoFrame.h"
+#import "dmz.h"
+
+@class VideoFrame;
 
 @protocol VideoStreamDelegate;
 

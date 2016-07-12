@@ -9,13 +9,22 @@
 #import <CoreMedia/CoreMedia.h>
 #import <Foundation/Foundation.h>
 
-#import "dmz.h"
+#include "dmz.h"
+
+@class CardInfo;
+@class CardScanner;
 
 @interface VideoFrame : NSObject
 
 - (id)initWithSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 
 - (void)process;
+
+@property(nonatomic, assign, readwrite) NSInteger isoSpeed;
+@property(nonatomic, assign, readwrite) float shutterSpeed;
+
+@property(nonatomic, strong, readwrite) CardInfo *cardInfo; // Will be nil unless frame processing completes with a successful scan
+@property(nonatomic, strong, readwrite) CardScanner *scanner;
 
 @property(assign) dmz_context *dmz;
 

@@ -20,6 +20,8 @@
 
 @required
 - (void)didScanCard:(CGFloat)info;
+
+@optional
 - (void)didReceiveFocusScore:(CGFloat)score;
 
 @end

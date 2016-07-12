@@ -9,8 +9,15 @@
 #import <CoreVideo/CoreVideo.h>
 #import <Foundation/Foundation.h>
 
+#include "opencv2/imgproc/imgproc_c.h"
+
 @interface IplImageUtils : NSObject
 
 + (IplImageUtils *)imageFromYCbCrBuffer:(CVImageBufferRef)imageBuffer plane:(size_t)plane;
++ (IplImageUtils *)initWithIplImage:(IplImage *)image;
+
+- (NSArray *)split;
+
+@property(nonatomic, assign, readonly) IplImage *image;
 
 @end
