@@ -37,6 +37,8 @@
         self.videoStream.previewLayer.contentsGravity = kCAGravityResizeAspectFill;
         self.videoStream.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         
+        self.videoStream.previewLayer.backgroundColor = [UIColor yellowColor].CGColor;
+        
         [self.layer addSublayer:self.videoStream.previewLayer];
         
         if ([self.videoStream hasAutoFocus]) {
@@ -48,7 +50,11 @@
     return self;
 }
 
-# pragma mark - Stream session control
+- (void)layoutSubviews {
+    self.videoStream.previewLayer.frame = self.frame;
+}
+
+#pragma mark - Stream session control
 
 - (void)startVideoStreamSession {
     [self.videoStream startSession];
@@ -62,7 +68,7 @@
     [self.videoStream focus];
 }
 
-# pragma mark - VideoStreamDelegate methods
+#pragma mark - VideoStreamDelegate methods
 
 - (void)videoStream:(VideoStream *)stream didProcessFrame:(VideoFrame *)frame {
     [self.delegate videoStream:stream didProcessFrame:frame];

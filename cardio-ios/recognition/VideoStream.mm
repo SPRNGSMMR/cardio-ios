@@ -6,11 +6,14 @@
 //  Copyright © 2016 Sylvain Reucherand. All rights reserved.
 //
 
+#import "IplImage.h"
 #import "VideoStream.h"
 #import "VideoFrame.h"
 #import "Utilities.h"
 
-@interface VideoStream ()
+@interface VideoStream () {
+    dmz_context *dmz;
+}
 
 @property(nonatomic, strong, readwrite) AVCaptureSession *captureSession;
 @property(nonatomic, strong, readwrite) AVCaptureDevice *camera;
@@ -28,7 +31,28 @@
 
 @implementation VideoStream
 
-# pragma mark - Session
+- (id)init {
+    self = [super init];
+    
+    if (self) {
+        self.captureSession = [[AVCaptureSession alloc] init];
+        self.camera = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+        
+        _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.captureSession];
+        
+        self.cameraConfigurationSemaphore = dispatch_semaphore_create(1);
+        
+        dmz = dmz_context_create();
+    }
+    
+    return self;
+}
+
+- (void)dealloc {
+    [self stopSession];
+}
+
+#pragma mark - Session
 
 // Consistent with <https://devforums.apple.com/message/887783#887783>, under iOS 7 it
 // appears that our captureSession's input and output linger in memory even after the
@@ -77,9 +101,8 @@
 
 - (void)removeInputAndOutput {
     [self.captureSession removeInput:self.cameraInput];
-    [self.captureSession removeOutput:self.videoOutput];
-    
     [self.videoOutput setSampleBufferDelegate:nil queue:NULL];
+    [self.captureSession removeOutput:self.videoOutput];
 }
 
 - (BOOL)changeCameraConfiguration:(void(^)())changeBlock {
@@ -161,7 +184,7 @@
     }
 }
 
-# pragma mark - Key-Value Observing
+#pragma mark - Key-Value Observing
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"adjustingFocus"]) {
@@ -171,7 +194,7 @@
     }
 }
 
-# pragma mark - Focus
+#pragma mark - Focus
 
 - (BOOL)hasAutoFocus {
     return [self.camera isFocusModeSupported:AVCaptureFocusModeAutoFocus];
@@ -198,7 +221,7 @@
     }];
 }
 
-# pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate methods
+#pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate methods
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
 }
@@ -206,6 +229,8 @@
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     @autoreleasepool {
         VideoFrame *frame = [[VideoFrame alloc] initWithSampleBuffer:sampleBuffer];
+        
+        frame.dmz = dmz;
         
         if (self.isRunning) {
             [frame process];

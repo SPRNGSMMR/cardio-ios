@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20FE69131D341F8F00C3991D /* IplImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FE69121D341F8F00C3991D /* IplImageUtils.m */; };
 		687836B61D33922F003AB627 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 687836B51D33922F003AB627 /* main.m */; };
 		687836B91D33922F003AB627 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 687836B81D33922F003AB627 /* AppDelegate.m */; };
 		687836BC1D33922F003AB627 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687836BB1D33922F003AB627 /* ViewController.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20FE69111D341F8F00C3991D /* IplImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IplImageUtils.h; path = "cardio-ios/utils/IplImageUtils.h"; sourceTree = "<group>"; };
+		20FE69121D341F8F00C3991D /* IplImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IplImageUtils.m; path = "cardio-ios/utils/IplImageUtils.m"; sourceTree = "<group>"; };
 		687836B11D33922F003AB627 /* cardio-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cardio-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		687836B51D33922F003AB627 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		687836B71D33922F003AB627 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				687836D31D33981A003AB627 /* VideoFrame.mm */,
 				687836D51D33982E003AB627 /* VideoStream.h */,
 				687836D61D33982E003AB627 /* VideoStream.mm */,
+				20FE69111D341F8F00C3991D /* IplImageUtils.h */,
+				20FE69121D341F8F00C3991D /* IplImageUtils.m */,
 			);
 			name = recognition;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				TargetAttributes = {
 					687836B01D33922F003AB627 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2WLPVDJ48G;
 					};
 				};
 			};
@@ -215,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				687836BC1D33922F003AB627 /* ViewController.m in Sources */,
+				20FE69131D341F8F00C3991D /* IplImageUtils.m in Sources */,
 				687836D71D33982E003AB627 /* VideoStream.mm in Sources */,
 				687836DB1D339CE6003AB627 /* Utilities.m in Sources */,
 				687836B91D33922F003AB627 /* AppDelegate.m in Sources */,
@@ -335,6 +342,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/dmz";
@@ -343,6 +352,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.cardio-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,6 +360,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/dmz";
@@ -358,6 +370,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.cardio-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -380,6 +393,7 @@
 				687836CA1D33922F003AB627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

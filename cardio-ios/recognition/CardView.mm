@@ -38,7 +38,7 @@
     [self.cameraView layoutIfNeeded];
 }
 
-# pragma mark - Potential disappearance
+#pragma mark - Potential disappearance
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     if (!newSuperview) {
@@ -72,20 +72,24 @@
     }
 }
 
-# pragma mark - Controls
+#pragma mark - Controls
 
 - (void)start {
-    if (![Utilities isCameraAvailable] &&
-        !self.isSessionRunning &&
+    if (!self.isSessionRunning &&
         !self.hidden &&
         self.window &&
         self.superview) {
-        return;
+        if (![Utilities isCameraAvailable]) {
+            return;
+        }
+    
+        self.isSessionRunning = YES;
+        
+        self.cameraView = [[CameraView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)) delegate:self];
+        
+        [self addSubview:self.cameraView];
+        [self performSelector:@selector(startSession) withObject:nil afterDelay:0.0f];
     }
-    
-    self.isSessionRunning = YES;
-    
-    self.cameraView = [[CameraView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)) delegate:self];
 }
 
 - (void)stop {
@@ -99,7 +103,7 @@
     }
 }
 
-# pragma mark - Video controls
+#pragma mark - Video controls
 
 - (void)startSession {
     if (self.cameraView) {
@@ -114,7 +118,7 @@
 }
 
 
-# pragma mark - Actions
+#pragma mark - Actions
 
 - (void)vibrate {
     AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);

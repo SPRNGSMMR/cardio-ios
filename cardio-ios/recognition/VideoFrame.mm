@@ -33,7 +33,12 @@
 }
 
 - (void)process {
+    cvSetErrMode(CV_ErrModeParent);
     
+    CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(self.buffer);
+    CVPixelBufferLockBaseAddress(imageBuffer, 0);
+    
+    self.
 }
 
 @end
