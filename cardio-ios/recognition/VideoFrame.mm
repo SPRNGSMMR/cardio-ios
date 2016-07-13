@@ -7,8 +7,8 @@
 //
 
 #import "VideoFrame.h"
+#import "CardIOIplImage.h"
 #import "CardScanner.h"
-#import "IplImageUtils.h"
 
 #define kMinFallbackFocusScore 6
 
@@ -16,11 +16,13 @@
 
 @property(nonatomic, assign, readwrite) CMSampleBufferRef buffer;
 
-@property(nonatomic, assign, readwrite) float focusScore;
-@property(nonatomic, strong, readwrite) IplImageUtils *ySample;
+@property(nonatomic, strong, readwrite) CardIOIplImage *ySample;
+@property(nonatomic, strong, readwrite) CardIOIplImage *cbSample;
+@property(nonatomic, strong, readwrite) CardIOIplImage *crSample;
 
-@property (nonatomic, assign, readwrite) dmz_edges found_edges;
-@property (nonatomic, assign, readwrite) dmz_corner_points corner_points;
+@property(nonatomic, assign, readwrite) float focusScore;
+@property(nonatomic, assign, readwrite) dmz_edges found_edges;
+@property(nonatomic, assign, readwrite) dmz_corner_points corner_points;
 
 @end
 
@@ -50,22 +52,25 @@
     // Lock address
     CVPixelBufferLockBaseAddress(imageBuffer, 0);
     
-    self.ySample = [IplImageUtils imageFromYCbCrBuffer:imageBuffer plane:0];
+    self.ySample = [CardIOIplImage imageFromYCbCrBuffer:imageBuffer plane:0];
     
     self.focusScore = dmz_focus_score(self.ySample.image, NO);
     
     if (self.focusScore > kMinFallbackFocusScore) {
-        NSArray *samples = [[IplImageUtils imageFromYCbCrBuffer:imageBuffer plane:0] split];
+        NSArray *samples = [[CardIOIplImage imageFromYCbCrBuffer:imageBuffer plane:1] split];
         
-        [self detectCard:samples];
+        self.cbSample = samples[0];
+        self.crSample = samples[1];
+        
+        [self detectCard];
     }
     
     // Release address
     CVPixelBufferUnlockBaseAddress(imageBuffer, 0);
 }
 
-- (void)detectCard:(NSArray<IplImageUtils *> *)samples {
-    bool foundCard = dmz_detect_edges(self.ySample.image, [samples[0] image], [samples[1] image], FrameOrientationPortrait, &_found_edges, &_corner_points);
+- (void)detectCard {
+    bool foundCard = dmz_detect_edges(self.ySample.image, self.cbSample.image, self.crSample.image, FrameOrientationPortrait, &_found_edges, &_corner_points);
     
     if (foundCard) {
         IplImage *foundCardY = NULL;
@@ -73,7 +78,7 @@
         dmz_transform_card(self.dmz, self.ySample.image, self.corner_points, FrameOrientationPortrait, false, &foundCardY);
         
         if ((foundCardY != NULL) && (foundCardY->nSize == sizeof(IplImage))) {
-            IplImageUtils *cardY = [IplImageUtils initWithIplImage:foundCardY];
+            CardIOIplImage *cardY = [CardIOIplImage imageWithIplImage:foundCardY];
             
             [self.scanner addFrame:cardY focusScore:self.focusScore brightnessScore:0.0f isoSpeed:0 shutterSpeed:0.0f];
             

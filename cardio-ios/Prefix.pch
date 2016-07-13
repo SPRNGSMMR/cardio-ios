@@ -1,0 +1,24 @@
+//
+//  Prefix.pch
+//  cardio-ios
+//
+//  Created by Sylvain Reucherand on 13/07/16.
+//  Copyright © 2016 Sylvain Reucherand. All rights reserved.
+//
+
+#ifndef USE_CAMERA
+    #define USE_CAMERA 1
+#endif
+
+#if USE_CAMERA
+    #include "opencv2/core/core_c.h"
+    #include "opencv2/core/core.hpp"
+#endif
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <MessageUI/MessageUI.h>
+#endif
+

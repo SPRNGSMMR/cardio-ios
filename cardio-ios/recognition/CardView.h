@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class CardInfo;
+
 @protocol CardViewDelegate;
 
 @interface CardView : UIView
@@ -19,7 +21,7 @@
 @protocol CardViewDelegate <NSObject>
 
 @required
-- (void)didScanCard:(CGFloat)info;
+- (void)didScanCard:(CardInfo *)info;
 
 @optional
 - (void)didReceiveFocusScore:(CGFloat)score;

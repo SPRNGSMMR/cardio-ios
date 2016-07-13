@@ -9,8 +9,10 @@
 #import <AudioToolbox/AudioServices.h>
 
 #import "CardView.h"
+#import "CardScanner.h"
 #import "CameraView.h"
 #import "Utilities.h"
+#import "VideoFrame.h"
 
 @interface CardView () <VideoStreamDelegate>
 
@@ -127,7 +129,14 @@
 #pragma mark - CardIOVideoStreamDelegate methods
 
 - (void)videoStream:(VideoStream *)stream didProcessFrame:(VideoFrame *)frame {
-    [self.delegate didReceiveFocusScore:0.0f];
+    [self.delegate didReceiveFocusScore:frame.focusScore];
+    
+    if (frame.scanner.complete) {
+        [self stopSession];
+        [self vibrate];
+        
+        [self.delegate didScanCard:frame.scanner.cardInfo];
+    }
 }
 
 @end

@@ -37,8 +37,12 @@
 
 #pragma mark - CardViewDelegate methods
 
-- (void)didScanCard:(CGFloat)info {
-    NSLog(@"Coucou");
+- (void)didScanCard:(CardInfo *)info {
+    NSLog(@"Info %@", info);
+}
+
+- (void)didReceiveFocusScore:(CGFloat)score {
+    NSLog(@"Score %f", score);
 }
 
 @end

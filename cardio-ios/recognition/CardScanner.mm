@@ -8,18 +8,16 @@
 
 #import "CardScanner.h"
 #import "CardInfo.h"
-#import "IplImageUtils.h"
-
-//#import "scan/scan.h"
+#import "CardIOIplImage.h"
 
 #include "opencv2/imgproc/imgproc_c.h"
 
 @interface CardScanner ()
 
 // intentionally atomic -- card scanners get passed around between threads
-//@property(assign, readwrite) ScannerState scannerState;
 @property(strong, readwrite) CardInfo *cardInfoCache;
 
+@property(assign, readwrite) ScannerState scannerState;
 @property(assign, readwrite) BOOL cardInfoCacheDirty;
 @property(assign, readwrite) BOOL lastFrameWasUsable;
 @property(assign, readwrite) BOOL lastFrameWasUpsideDown;
@@ -33,7 +31,7 @@
     self = [super init];
     
     if (self) {
-//        scanner_initialize(&_scannerState);
+        scanner_initialize(&_scannerState);
         
         [self marksCachesDirty];
     }
@@ -42,67 +40,66 @@
 }
 
 - (void)dealloc {
-//    scanner_destroy(&_scannerState);
+    scanner_destroy(&_scannerState);
 }
 
-- (void)addFrame:(IplImageUtils *)frame focusScore:(float)focusScore brightnessScore:(float)brightnessScore isoSpeed:(NSInteger)isoSpeed shutterSpeed:(float)shutterSpeed {
-//    if (self.isScanComplete) {
-//        return;
-//    }
-//    
-//    FrameScanResult result;
-//    
-//    result.focus_score = focusScore;
-//    result.brightness_score = brightnessScore;
-//    result.iso_speed = (uint16_t)isoSpeed;
-//    result.shutter_speed = shutterSpeed;
-//    result.torch_is_on = NO;
-//    result.flipped = NO;
-//    
-//    BOOL scanExpiry = NO;
-//    
-//    scanner_add_frame_with_expiry(&_scannerState, frame.image, scanExpiry, &result);
-//    
-//    self.lastFrameWasUsable = result.usable;
-//    
-//    [self marksCachesDirty];
+- (void)addFrame:(CardIOIplImage *)frame focusScore:(float)focusScore brightnessScore:(float)brightnessScore isoSpeed:(NSInteger)isoSpeed shutterSpeed:(float)shutterSpeed {
+    if (self.isScanComplete) {
+        return;
+    }
+    
+    FrameScanResult result;
+    
+    result.focus_score = focusScore;
+    result.brightness_score = brightnessScore;
+    result.iso_speed = (uint16_t)isoSpeed;
+    result.shutter_speed = shutterSpeed;
+    result.torch_is_on = NO;
+    result.flipped = NO;
+    
+    BOOL scanExpiry = NO;
+    
+    scanner_add_frame_with_expiry(&_scannerState, frame.image, scanExpiry, &result);
+    
+    self.lastFrameWasUsable = result.usable;
+    
+    [self marksCachesDirty];
 }
 
 - (CardInfo *)cardInfo {
-    return nil;
-    //    if (self.isScanComplete) {
-//        return self.cardInfoCache;
-//    }
-//    
-//    if (!self.cardInfoCacheDirty) {
-//        return nil;
-//    }
-//    
-//    if (self.cardInfoCacheDirty) {
-//        ScannerResult result;
-//        
-//        scanner_result(&_scannerState, &result);
-//        
-//        if (result.complete) {
-//            NSString *cardNumbers = nil;
-//            NSMutableArray *numbers = [NSMutableArray arrayWithCapacity:result.n_numbers];
-//            
-//            self.isScanComplete = YES;
-//            
-//            for (uint8_t i=0; i<result.n_numbers; i++) {
-//                NSNumber *predictionNumber = [NSNumber numberWithInt:(int)result.predictions(i)];
-//                
-//                [numbers addObject:predictionNumber];
-//            }
-//            
-//            cardNumbers = [numbers componentsJoinedByString:@""];
-//            
-//            self.cardInfoCache = [CardInfo cardInfoWithNumbers:cardNumbers];
-//        } else {
-//            self.cardInfoCacheDirty = NO;
-//        }
-//    }
-//    
+    if (self.isScanComplete) {
+        return self.cardInfoCache;
+    }
+    
+    if (!self.cardInfoCacheDirty) {
+        return nil;
+    }
+    
+    if (self.cardInfoCacheDirty) {
+        ScannerResult result;
+        
+        scanner_result(&_scannerState, &result);
+        
+        if (result.complete) {
+            NSString *cardNumbers = nil;
+            NSMutableArray *numbers = [NSMutableArray arrayWithCapacity:result.n_numbers];
+            
+            self.isScanComplete = YES;
+            
+            for (uint8_t i=0; i<result.n_numbers; i++) {
+                NSNumber *predictionNumber = [NSNumber numberWithInt:(int)result.predictions(i)];
+                
+                [numbers addObject:predictionNumber];
+            }
+            
+            cardNumbers = [numbers componentsJoinedByString:@""];
+            
+            self.cardInfoCache = [CardInfo cardInfoWithNumbers:cardNumbers];
+        } else {
+            self.cardInfoCacheDirty = NO;
+        }
+    }
+    
     return self.cardInfoCache;
 }
 

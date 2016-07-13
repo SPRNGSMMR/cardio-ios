@@ -22,36 +22,9 @@
 		687837131D33EECA003AB627 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837121D33EECA003AB627 /* CoreMedia.framework */; };
 		687837151D33EED6003AB627 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837141D33EED6003AB627 /* CoreVideo.framework */; };
 		687837171D33EEE4003AB627 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837161D33EEE4003AB627 /* AVFoundation.framework */; };
-		687837191D34E04B003AB627 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837181D34E04B003AB627 /* opencv2.framework */; };
 		6878371C1D34EAD6003AB627 /* CardScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6878371B1D34EAD6003AB627 /* CardScanner.mm */; };
 		6878371F1D35118E003AB627 /* CardInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6878371E1D35118E003AB627 /* CardInfo.mm */; };
-		687A4D1B1D353D30007828DC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B111D353D2F007828DC /* .gitignore */; };
-		687A4D261D353D30007828DC /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B281D353D2F007828DC /* __init__.py */; };
-		687A4D271D353D30007828DC /* build_opencv.sh in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B291D353D2F007828DC /* build_opencv.sh */; };
-		687A4D281D353D30007828DC /* dmz.html in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B2A1D353D2F007828DC /* dmz.html */; };
-		687A4D291D353D30007828DC /* dmz.pyx in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B2B1D353D2F007828DC /* dmz.pyx */; };
-		687A4D2A1D353D30007828DC /* dmz.pyxbld in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B2C1D353D2F007828DC /* dmz.pyxbld */; };
-		687A4D2B1D353D30007828DC /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B2D1D353D2F007828DC /* notes.txt */; };
-		687A4D2E1D353D30007828DC /* .tgitconfig in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B491D353D2F007828DC /* .tgitconfig */; };
 		687A4D311D353D30007828DC /* dmz_all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687A4B4D1D353D2F007828DC /* dmz_all.cpp */; };
-		687A4D361D353D30007828DC /* a-original.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B591D353D2F007828DC /* a-original.png */; };
-		687A4D371D353D30007828DC /* b-sobel.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B5A1D353D2F007828DC /* b-sobel.png */; };
-		687A4D381D353D30007828DC /* c-rows.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B5B1D353D2F007828DC /* c-rows.png */; };
-		687A4D391D353D30007828DC /* d-stripes.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B5C1D353D2F007828DC /* d-stripes.png */; };
-		687A4D3A1D353D30007828DC /* e-1-char_rects.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B5D1D353D2F007828DC /* e-1-char_rects.png */; };
-		687A4D3B1D353D30007828DC /* e-2-char_rects.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B5E1D353D2F007828DC /* e-2-char_rects.png */; };
-		687A4D3C1D353D30007828DC /* e-3-char_rects.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B5F1D353D2F007828DC /* e-3-char_rects.png */; };
-		687A4D3D1D353D30007828DC /* f-1-groups.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B601D353D2F007828DC /* f-1-groups.png */; };
-		687A4D3E1D353D30007828DC /* f-2-groups.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B611D353D2F007828DC /* f-2-groups.png */; };
-		687A4D3F1D353D30007828DC /* f-3-groups.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B621D353D2F007828DC /* f-3-groups.png */; };
-		687A4D401D353D30007828DC /* g-1-regrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B631D353D2F007828DC /* g-1-regrid.png */; };
-		687A4D411D353D30007828DC /* g-2-regrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B641D353D2F007828DC /* g-2-regrid.png */; };
-		687A4D421D353D30007828DC /* g-3-regrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B651D353D2F007828DC /* g-3-regrid.png */; };
-		687A4D431D353D30007828DC /* h-1-optimize.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B661D353D2F007828DC /* h-1-optimize.png */; };
-		687A4D441D353D30007828DC /* h-2-optimize.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B671D353D2F007828DC /* h-2-optimize.png */; };
-		687A4D451D353D30007828DC /* h-3-optimize.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B681D353D2F007828DC /* h-3-optimize.png */; };
-		687A4D461D353D30007828DC /* i-slash-magnified.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B691D353D2F007828DC /* i-slash-magnified.png */; };
-		687A4D471D353D30007828DC /* i-slash.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B6A1D353D2F007828DC /* i-slash.png */; };
 		687A4D481D353D30007828DC /* Array in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B6C1D353D2F007828DC /* Array */; };
 		687A4D491D353D30007828DC /* Cholesky in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B6D1D353D2F007828DC /* Cholesky */; };
 		687A4D4A1D353D30007828DC /* CholmodSupport in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B6E1D353D2F007828DC /* CholmodSupport */; };
@@ -122,16 +95,16 @@
 		687A4D8B1D353D30007828DC /* SuperLUSupport in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD21D353D2F007828DC /* SuperLUSupport */; };
 		687A4D8C1D353D30007828DC /* SVD in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD31D353D2F007828DC /* SVD */; };
 		687A4D8D1D353D30007828DC /* UmfPackSupport in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD41D353D2F007828DC /* UmfPackSupport */; };
-		687A4D8E1D353D30007828DC /* fabfile.py in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD61D353D2F007828DC /* fabfile.py */; };
 		687A4D9A1D353D30007828DC /* mz_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4CF01D353D30007828DC /* mz_ios.mm */; };
-		687A4D9E1D353D30007828DC /* requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 687A4D051D353D30007828DC /* requirements.txt */; };
-		687A4D9F1D353D30007828DC /* cardio_logo_220.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4D071D353D30007828DC /* cardio_logo_220.png */; };
-		687A4DA01D353D30007828DC /* pp_h_rgb.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A4D081D353D30007828DC /* pp_h_rgb.png */; };
+		687A4DBE1D36342D007828DC /* CardIOGPUFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DB41D36342D007828DC /* CardIOGPUFilter.m */; };
+		687A4DBF1D36342D007828DC /* CardIOGPURenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DB61D36342D007828DC /* CardIOGPURenderer.mm */; };
+		687A4DC01D36342D007828DC /* CardIOGPUTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DB91D36342D007828DC /* CardIOGPUTransformFilter.m */; };
+		687A4DC11D36342D007828DC /* CardIOIplImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DBB1D36342D007828DC /* CardIOIplImage.mm */; };
+		687A4DC21D36342D007828DC /* CardIOMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DBD1D36342D007828DC /* CardIOMacros.m */; };
+		687A4DC41D3644A1007828DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687A4DC31D3644A1007828DC /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20FE69111D341F8F00C3991D /* IplImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IplImageUtils.h; path = "cardio-ios/utils/IplImageUtils.h"; sourceTree = "<group>"; };
-		20FE69121D341F8F00C3991D /* IplImageUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IplImageUtils.mm; path = "cardio-ios/utils/IplImageUtils.mm"; sourceTree = "<group>"; };
 		687836B11D33922F003AB627 /* cardio-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cardio-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		687836B51D33922F003AB627 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		687836B71D33922F003AB627 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,14 +129,11 @@
 		687837121D33EECA003AB627 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		687837141D33EED6003AB627 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		687837161D33EEE4003AB627 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		687837181D34E04B003AB627 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = lib/opencv/opencv2.framework; sourceTree = "<group>"; };
 		6878371A1D34EAD6003AB627 /* CardScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardScanner.h; path = "cardio-ios/recognition/CardScanner.h"; sourceTree = "<group>"; };
 		6878371B1D34EAD6003AB627 /* CardScanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CardScanner.mm; path = "cardio-ios/recognition/CardScanner.mm"; sourceTree = "<group>"; };
 		6878371D1D35118E003AB627 /* CardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardInfo.h; path = "cardio-ios/recognition/CardInfo.h"; sourceTree = "<group>"; };
 		6878371E1D35118E003AB627 /* CardInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CardInfo.mm; path = "cardio-ios/recognition/CardInfo.mm"; sourceTree = "<group>"; };
-		687A4B111D353D2F007828DC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		687A4B121D353D2F007828DC /* compile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compile.h; sourceTree = "<group>"; };
-		687A4B131D353D2F007828DC /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		687A4B151D353D2F007828DC /* canny.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = canny.cpp; sourceTree = "<group>"; };
 		687A4B161D353D2F007828DC /* canny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = canny.h; sourceTree = "<group>"; };
 		687A4B171D353D2F007828DC /* conv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = conv.cpp; sourceTree = "<group>"; };
@@ -182,34 +152,6 @@
 		687A4B241D353D2F007828DC /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
 		687A4B251D353D2F007828DC /* warp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = warp.cpp; sourceTree = "<group>"; };
 		687A4B261D353D2F007828DC /* warp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warp.h; sourceTree = "<group>"; };
-		687A4B281D353D2F007828DC /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
-		687A4B291D353D2F007828DC /* build_opencv.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_opencv.sh; sourceTree = "<group>"; };
-		687A4B2A1D353D2F007828DC /* dmz.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dmz.html; sourceTree = "<group>"; };
-		687A4B2B1D353D2F007828DC /* dmz.pyx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dmz.pyx; sourceTree = "<group>"; };
-		687A4B2C1D353D2F007828DC /* dmz.pyxbld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dmz.pyxbld; sourceTree = "<group>"; };
-		687A4B2D1D353D2F007828DC /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
-		687A4B321D353D2F007828DC /* core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = core.hpp; sourceTree = "<group>"; };
-		687A4B331D353D2F007828DC /* core_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_c.h; sourceTree = "<group>"; };
-		687A4B341D353D2F007828DC /* cuda_devptrs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cuda_devptrs.hpp; sourceTree = "<group>"; };
-		687A4B351D353D2F007828DC /* devmem2d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = devmem2d.hpp; sourceTree = "<group>"; };
-		687A4B361D353D2F007828DC /* eigen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = eigen.hpp; sourceTree = "<group>"; };
-		687A4B371D353D2F007828DC /* gpumat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gpumat.hpp; sourceTree = "<group>"; };
-		687A4B381D353D2F007828DC /* internal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = internal.hpp; sourceTree = "<group>"; };
-		687A4B391D353D2F007828DC /* mat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat.hpp; sourceTree = "<group>"; };
-		687A4B3A1D353D2F007828DC /* opengl_interop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opengl_interop.hpp; sourceTree = "<group>"; };
-		687A4B3B1D353D2F007828DC /* opengl_interop_deprecated.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opengl_interop_deprecated.hpp; sourceTree = "<group>"; };
-		687A4B3C1D353D2F007828DC /* operations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = operations.hpp; sourceTree = "<group>"; };
-		687A4B3D1D353D2F007828DC /* types_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types_c.h; sourceTree = "<group>"; };
-		687A4B3E1D353D2F007828DC /* version.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = version.hpp; sourceTree = "<group>"; };
-		687A4B3F1D353D2F007828DC /* wimage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wimage.hpp; sourceTree = "<group>"; };
-		687A4B411D353D2F007828DC /* imgproc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = imgproc.hpp; sourceTree = "<group>"; };
-		687A4B421D353D2F007828DC /* imgproc_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgproc_c.h; sourceTree = "<group>"; };
-		687A4B431D353D2F007828DC /* types_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types_c.h; sourceTree = "<group>"; };
-		687A4B441D353D2F007828DC /* opencv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opencv.hpp; sourceTree = "<group>"; };
-		687A4B461D353D2F007828DC /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
-		687A4B471D353D2F007828DC /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
-		687A4B491D353D2F007828DC /* .tgitconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .tgitconfig; sourceTree = "<group>"; };
-		687A4B4A1D353D2F007828DC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		687A4B4B1D353D2F007828DC /* dmz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dmz.cpp; sourceTree = "<group>"; };
 		687A4B4C1D353D2F007828DC /* dmz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmz.h; sourceTree = "<group>"; };
 		687A4B4D1D353D2F007828DC /* dmz_all.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dmz_all.cpp; sourceTree = "<group>"; };
@@ -218,27 +160,6 @@
 		687A4B501D353D2F007828DC /* dmz_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmz_macros.h; sourceTree = "<group>"; };
 		687A4B511D353D2F007828DC /* dmz_olm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dmz_olm.cpp; sourceTree = "<group>"; };
 		687A4B521D353D2F007828DC /* dmz_olm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmz_olm.h; sourceTree = "<group>"; };
-		687A4B541D353D2F007828DC /* camera_resolution.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = camera_resolution.md; sourceTree = "<group>"; };
-		687A4B561D353D2F007828DC /* expiry_categorization.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = expiry_categorization.md; sourceTree = "<group>"; };
-		687A4B571D353D2F007828DC /* expiry_segmentation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = expiry_segmentation.md; sourceTree = "<group>"; };
-		687A4B591D353D2F007828DC /* a-original.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a-original.png"; sourceTree = "<group>"; };
-		687A4B5A1D353D2F007828DC /* b-sobel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b-sobel.png"; sourceTree = "<group>"; };
-		687A4B5B1D353D2F007828DC /* c-rows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c-rows.png"; sourceTree = "<group>"; };
-		687A4B5C1D353D2F007828DC /* d-stripes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d-stripes.png"; sourceTree = "<group>"; };
-		687A4B5D1D353D2F007828DC /* e-1-char_rects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e-1-char_rects.png"; sourceTree = "<group>"; };
-		687A4B5E1D353D2F007828DC /* e-2-char_rects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e-2-char_rects.png"; sourceTree = "<group>"; };
-		687A4B5F1D353D2F007828DC /* e-3-char_rects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e-3-char_rects.png"; sourceTree = "<group>"; };
-		687A4B601D353D2F007828DC /* f-1-groups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-1-groups.png"; sourceTree = "<group>"; };
-		687A4B611D353D2F007828DC /* f-2-groups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-2-groups.png"; sourceTree = "<group>"; };
-		687A4B621D353D2F007828DC /* f-3-groups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-3-groups.png"; sourceTree = "<group>"; };
-		687A4B631D353D2F007828DC /* g-1-regrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g-1-regrid.png"; sourceTree = "<group>"; };
-		687A4B641D353D2F007828DC /* g-2-regrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g-2-regrid.png"; sourceTree = "<group>"; };
-		687A4B651D353D2F007828DC /* g-3-regrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "g-3-regrid.png"; sourceTree = "<group>"; };
-		687A4B661D353D2F007828DC /* h-1-optimize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h-1-optimize.png"; sourceTree = "<group>"; };
-		687A4B671D353D2F007828DC /* h-2-optimize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h-2-optimize.png"; sourceTree = "<group>"; };
-		687A4B681D353D2F007828DC /* h-3-optimize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h-3-optimize.png"; sourceTree = "<group>"; };
-		687A4B691D353D2F007828DC /* i-slash-magnified.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i-slash-magnified.png"; sourceTree = "<group>"; };
-		687A4B6A1D353D2F007828DC /* i-slash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i-slash.png"; sourceTree = "<group>"; };
 		687A4B6C1D353D2F007828DC /* Array */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Array; sourceTree = "<group>"; };
 		687A4B6D1D353D2F007828DC /* Cholesky */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cholesky; sourceTree = "<group>"; };
 		687A4B6E1D353D2F007828DC /* CholmodSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CholmodSupport; sourceTree = "<group>"; };
@@ -564,10 +485,8 @@
 		687A4CD31D353D2F007828DC /* SVD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SVD; sourceTree = "<group>"; };
 		687A4CD41D353D2F007828DC /* UmfPackSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UmfPackSupport; sourceTree = "<group>"; };
 		687A4CD51D353D2F007828DC /* eigen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eigen.h; sourceTree = "<group>"; };
-		687A4CD61D353D2F007828DC /* fabfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fabfile.py; sourceTree = "<group>"; };
 		687A4CD71D353D2F007828DC /* geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geometry.cpp; sourceTree = "<group>"; };
 		687A4CD81D353D2F007828DC /* geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
-		687A4CD91D353D30007828DC /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		687A4CDC1D353D30007828DC /* modelc_bf4dd6c8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modelc_bf4dd6c8.cpp; sourceTree = "<group>"; };
 		687A4CDD1D353D30007828DC /* modelc_bf4dd6c8.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = modelc_bf4dd6c8.hpp; sourceTree = "<group>"; };
 		687A4CDE1D353D30007828DC /* modelm_730c4cbd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modelm_730c4cbd.cpp; sourceTree = "<group>"; };
@@ -584,30 +503,11 @@
 		687A4CEA1D353D30007828DC /* TestGeneratedModels.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestGeneratedModels.mm; sourceTree = "<group>"; };
 		687A4CEB1D353D30007828DC /* mz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mz.cpp; sourceTree = "<group>"; };
 		687A4CEC1D353D30007828DC /* mz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz.h; sourceTree = "<group>"; };
-		687A4CED1D353D30007828DC /* mz_android.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mz_android.cpp; sourceTree = "<group>"; };
-		687A4CEE1D353D30007828DC /* mz_android.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_android.h; sourceTree = "<group>"; };
 		687A4CEF1D353D30007828DC /* mz_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mz_ios.h; sourceTree = "<group>"; };
 		687A4CF01D353D30007828DC /* mz_ios.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mz_ios.mm; sourceTree = "<group>"; };
 		687A4CF11D353D30007828DC /* neon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neon.h; sourceTree = "<group>"; };
-		687A4CF41D353D30007828DC /* core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = core.hpp; sourceTree = "<group>"; };
-		687A4CF51D353D30007828DC /* core_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core_c.h; sourceTree = "<group>"; };
-		687A4CF61D353D30007828DC /* eigen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = eigen.hpp; sourceTree = "<group>"; };
-		687A4CF71D353D30007828DC /* internal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = internal.hpp; sourceTree = "<group>"; };
-		687A4CF81D353D30007828DC /* mat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat.hpp; sourceTree = "<group>"; };
-		687A4CF91D353D30007828DC /* operations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = operations.hpp; sourceTree = "<group>"; };
-		687A4CFA1D353D30007828DC /* types_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types_c.h; sourceTree = "<group>"; };
-		687A4CFB1D353D30007828DC /* version.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = version.hpp; sourceTree = "<group>"; };
-		687A4CFC1D353D30007828DC /* wimage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wimage.hpp; sourceTree = "<group>"; };
-		687A4CFE1D353D30007828DC /* imgproc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = imgproc.hpp; sourceTree = "<group>"; };
-		687A4CFF1D353D30007828DC /* imgproc_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgproc_c.h; sourceTree = "<group>"; };
-		687A4D001D353D30007828DC /* types_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types_c.h; sourceTree = "<group>"; };
-		687A4D011D353D30007828DC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		687A4D021D353D30007828DC /* processor_support.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processor_support.cpp; sourceTree = "<group>"; };
 		687A4D031D353D30007828DC /* processor_support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processor_support.h; sourceTree = "<group>"; };
-		687A4D041D353D30007828DC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		687A4D051D353D30007828DC /* requirements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = requirements.txt; sourceTree = "<group>"; };
-		687A4D071D353D30007828DC /* cardio_logo_220.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardio_logo_220.png; sourceTree = "<group>"; };
-		687A4D081D353D30007828DC /* pp_h_rgb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pp_h_rgb.png; sourceTree = "<group>"; };
 		687A4D0A1D353D30007828DC /* expiry_categorize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = expiry_categorize.cpp; sourceTree = "<group>"; };
 		687A4D0B1D353D30007828DC /* expiry_categorize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expiry_categorize.h; sourceTree = "<group>"; };
 		687A4D0C1D353D30007828DC /* expiry_seg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = expiry_seg.cpp; sourceTree = "<group>"; };
@@ -625,6 +525,20 @@
 		687A4D181D353D30007828DC /* scan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scan.h; sourceTree = "<group>"; };
 		687A4D191D353D30007828DC /* scan_analytics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scan_analytics.cpp; sourceTree = "<group>"; };
 		687A4D1A1D353D30007828DC /* scan_analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scan_analytics.h; sourceTree = "<group>"; };
+		687A4DB01D363252007828DC /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		687A4DB21D36342D007828DC /* CardIOCGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCGGeometry.h; sourceTree = "<group>"; };
+		687A4DB31D36342D007828DC /* CardIOGPUFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUFilter.h; sourceTree = "<group>"; };
+		687A4DB41D36342D007828DC /* CardIOGPUFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOGPUFilter.m; sourceTree = "<group>"; };
+		687A4DB51D36342D007828DC /* CardIOGPURenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPURenderer.h; sourceTree = "<group>"; };
+		687A4DB61D36342D007828DC /* CardIOGPURenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardIOGPURenderer.mm; sourceTree = "<group>"; };
+		687A4DB71D36342D007828DC /* CardIOGPUShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUShaders.h; sourceTree = "<group>"; };
+		687A4DB81D36342D007828DC /* CardIOGPUTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUTransformFilter.h; sourceTree = "<group>"; };
+		687A4DB91D36342D007828DC /* CardIOGPUTransformFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOGPUTransformFilter.m; sourceTree = "<group>"; };
+		687A4DBA1D36342D007828DC /* CardIOIplImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOIplImage.h; sourceTree = "<group>"; };
+		687A4DBB1D36342D007828DC /* CardIOIplImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardIOIplImage.mm; sourceTree = "<group>"; };
+		687A4DBC1D36342D007828DC /* CardIOMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOMacros.h; sourceTree = "<group>"; };
+		687A4DBD1D36342D007828DC /* CardIOMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOMacros.m; sourceTree = "<group>"; };
+		687A4DC31D3644A1007828DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = lib/opencv/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -632,7 +546,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687837191D34E04B003AB627 /* opencv2.framework in Frameworks */,
+				687A4DC41D3644A1007828DC /* opencv2.framework in Frameworks */,
 				687837171D33EEE4003AB627 /* AVFoundation.framework in Frameworks */,
 				687837151D33EED6003AB627 /* CoreVideo.framework in Frameworks */,
 				687837131D33EECA003AB627 /* CoreMedia.framework in Frameworks */,
@@ -646,6 +560,7 @@
 		687836A81D33922F003AB627 = {
 			isa = PBXGroup;
 			children = (
+				687A4DB11D36342D007828DC /* icc */,
 				687A4B101D353D2F007828DC /* dmz */,
 				687836DE1D33B74E003AB627 /* frameworks */,
 				687836D81D339CC5003AB627 /* utils */,
@@ -666,6 +581,7 @@
 		687836B31D33922F003AB627 /* cardio-ios */ = {
 			isa = PBXGroup;
 			children = (
+				687A4DB01D363252007828DC /* Prefix.pch */,
 				687836B71D33922F003AB627 /* AppDelegate.h */,
 				687836B81D33922F003AB627 /* AppDelegate.m */,
 				687836BA1D33922F003AB627 /* ViewController.h */,
@@ -698,8 +614,6 @@
 				687836D31D33981A003AB627 /* VideoFrame.mm */,
 				687836D51D33982E003AB627 /* VideoStream.h */,
 				687836D61D33982E003AB627 /* VideoStream.mm */,
-				20FE69111D341F8F00C3991D /* IplImageUtils.h */,
-				20FE69121D341F8F00C3991D /* IplImageUtils.mm */,
 				6878371A1D34EAD6003AB627 /* CardScanner.h */,
 				6878371B1D34EAD6003AB627 /* CardScanner.mm */,
 				6878371D1D35118E003AB627 /* CardInfo.h */,
@@ -720,7 +634,7 @@
 		687836DE1D33B74E003AB627 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				687837181D34E04B003AB627 /* opencv2.framework */,
+				687A4DC31D3644A1007828DC /* opencv2.framework */,
 				687837161D33EEE4003AB627 /* AVFoundation.framework */,
 				687837141D33EED6003AB627 /* CoreVideo.framework */,
 				687837121D33EECA003AB627 /* CoreMedia.framework */,
@@ -732,11 +646,8 @@
 		687A4B101D353D2F007828DC /* dmz */ = {
 			isa = PBXGroup;
 			children = (
-				687A4B111D353D2F007828DC /* .gitignore */,
 				687A4B121D353D2F007828DC /* compile.h */,
-				687A4B131D353D2F007828DC /* CONTRIBUTING.md */,
 				687A4B141D353D2F007828DC /* cv */,
-				687A4B271D353D2F007828DC /* cython_dmz */,
 				687A4B4B1D353D2F007828DC /* dmz.cpp */,
 				687A4B4C1D353D2F007828DC /* dmz.h */,
 				687A4B4D1D353D2F007828DC /* dmz_all.cpp */,
@@ -745,27 +656,18 @@
 				687A4B501D353D2F007828DC /* dmz_macros.h */,
 				687A4B511D353D2F007828DC /* dmz_olm.cpp */,
 				687A4B521D353D2F007828DC /* dmz_olm.h */,
-				687A4B531D353D2F007828DC /* docs */,
 				687A4B6B1D353D2F007828DC /* Eigen */,
 				687A4CD51D353D2F007828DC /* eigen.h */,
-				687A4CD61D353D2F007828DC /* fabfile.py */,
 				687A4CD71D353D2F007828DC /* geometry.cpp */,
 				687A4CD81D353D2F007828DC /* geometry.h */,
-				687A4CD91D353D30007828DC /* LICENSE.md */,
 				687A4CDA1D353D30007828DC /* models */,
 				687A4CEB1D353D30007828DC /* mz.cpp */,
 				687A4CEC1D353D30007828DC /* mz.h */,
-				687A4CED1D353D30007828DC /* mz_android.cpp */,
-				687A4CEE1D353D30007828DC /* mz_android.h */,
 				687A4CEF1D353D30007828DC /* mz_ios.h */,
 				687A4CF01D353D30007828DC /* mz_ios.mm */,
 				687A4CF11D353D30007828DC /* neon.h */,
-				687A4CF21D353D30007828DC /* opencv2 */,
 				687A4D021D353D30007828DC /* processor_support.cpp */,
 				687A4D031D353D30007828DC /* processor_support.h */,
-				687A4D041D353D30007828DC /* README.md */,
-				687A4D051D353D30007828DC /* requirements.txt */,
-				687A4D061D353D30007828DC /* Resources */,
 				687A4D091D353D30007828DC /* scan */,
 			);
 			name = dmz;
@@ -795,141 +697,6 @@
 				687A4B261D353D2F007828DC /* warp.h */,
 			);
 			path = cv;
-			sourceTree = "<group>";
-		};
-		687A4B271D353D2F007828DC /* cython_dmz */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B281D353D2F007828DC /* __init__.py */,
-				687A4B291D353D2F007828DC /* build_opencv.sh */,
-				687A4B2A1D353D2F007828DC /* dmz.html */,
-				687A4B2B1D353D2F007828DC /* dmz.pyx */,
-				687A4B2C1D353D2F007828DC /* dmz.pyxbld */,
-				687A4B2D1D353D2F007828DC /* notes.txt */,
-				687A4B2E1D353D2F007828DC /* opencv */,
-				687A4B481D353D2F007828DC /* opencv-2.4.9 */,
-				687A4B4A1D353D2F007828DC /* README.md */,
-			);
-			path = cython_dmz;
-			sourceTree = "<group>";
-		};
-		687A4B2E1D353D2F007828DC /* opencv */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B2F1D353D2F007828DC /* include */,
-				687A4B451D353D2F007828DC /* lib */,
-			);
-			path = opencv;
-			sourceTree = "<group>";
-		};
-		687A4B2F1D353D2F007828DC /* include */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B301D353D2F007828DC /* opencv2 */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		687A4B301D353D2F007828DC /* opencv2 */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B311D353D2F007828DC /* core */,
-				687A4B401D353D2F007828DC /* imgproc */,
-				687A4B441D353D2F007828DC /* opencv.hpp */,
-			);
-			path = opencv2;
-			sourceTree = "<group>";
-		};
-		687A4B311D353D2F007828DC /* core */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B321D353D2F007828DC /* core.hpp */,
-				687A4B331D353D2F007828DC /* core_c.h */,
-				687A4B341D353D2F007828DC /* cuda_devptrs.hpp */,
-				687A4B351D353D2F007828DC /* devmem2d.hpp */,
-				687A4B361D353D2F007828DC /* eigen.hpp */,
-				687A4B371D353D2F007828DC /* gpumat.hpp */,
-				687A4B381D353D2F007828DC /* internal.hpp */,
-				687A4B391D353D2F007828DC /* mat.hpp */,
-				687A4B3A1D353D2F007828DC /* opengl_interop.hpp */,
-				687A4B3B1D353D2F007828DC /* opengl_interop_deprecated.hpp */,
-				687A4B3C1D353D2F007828DC /* operations.hpp */,
-				687A4B3D1D353D2F007828DC /* types_c.h */,
-				687A4B3E1D353D2F007828DC /* version.hpp */,
-				687A4B3F1D353D2F007828DC /* wimage.hpp */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		687A4B401D353D2F007828DC /* imgproc */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B411D353D2F007828DC /* imgproc.hpp */,
-				687A4B421D353D2F007828DC /* imgproc_c.h */,
-				687A4B431D353D2F007828DC /* types_c.h */,
-			);
-			path = imgproc;
-			sourceTree = "<group>";
-		};
-		687A4B451D353D2F007828DC /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B461D353D2F007828DC /* libopencv_core.a */,
-				687A4B471D353D2F007828DC /* libopencv_imgproc.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		687A4B481D353D2F007828DC /* opencv-2.4.9 */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B491D353D2F007828DC /* .tgitconfig */,
-			);
-			path = "opencv-2.4.9";
-			sourceTree = "<group>";
-		};
-		687A4B531D353D2F007828DC /* docs */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B541D353D2F007828DC /* camera_resolution.md */,
-				687A4B551D353D2F007828DC /* expiry_docs */,
-			);
-			path = docs;
-			sourceTree = "<group>";
-		};
-		687A4B551D353D2F007828DC /* expiry_docs */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B561D353D2F007828DC /* expiry_categorization.md */,
-				687A4B571D353D2F007828DC /* expiry_segmentation.md */,
-				687A4B581D353D2F007828DC /* images */,
-			);
-			path = expiry_docs;
-			sourceTree = "<group>";
-		};
-		687A4B581D353D2F007828DC /* images */ = {
-			isa = PBXGroup;
-			children = (
-				687A4B591D353D2F007828DC /* a-original.png */,
-				687A4B5A1D353D2F007828DC /* b-sobel.png */,
-				687A4B5B1D353D2F007828DC /* c-rows.png */,
-				687A4B5C1D353D2F007828DC /* d-stripes.png */,
-				687A4B5D1D353D2F007828DC /* e-1-char_rects.png */,
-				687A4B5E1D353D2F007828DC /* e-2-char_rects.png */,
-				687A4B5F1D353D2F007828DC /* e-3-char_rects.png */,
-				687A4B601D353D2F007828DC /* f-1-groups.png */,
-				687A4B611D353D2F007828DC /* f-2-groups.png */,
-				687A4B621D353D2F007828DC /* f-3-groups.png */,
-				687A4B631D353D2F007828DC /* g-1-regrid.png */,
-				687A4B641D353D2F007828DC /* g-2-regrid.png */,
-				687A4B651D353D2F007828DC /* g-3-regrid.png */,
-				687A4B661D353D2F007828DC /* h-1-optimize.png */,
-				687A4B671D353D2F007828DC /* h-2-optimize.png */,
-				687A4B681D353D2F007828DC /* h-3-optimize.png */,
-				687A4B691D353D2F007828DC /* i-slash-magnified.png */,
-				687A4B6A1D353D2F007828DC /* i-slash.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		687A4B6B1D353D2F007828DC /* Eigen */ = {
@@ -1596,51 +1363,6 @@
 			path = generated;
 			sourceTree = "<group>";
 		};
-		687A4CF21D353D30007828DC /* opencv2 */ = {
-			isa = PBXGroup;
-			children = (
-				687A4CF31D353D30007828DC /* core */,
-				687A4CFD1D353D30007828DC /* imgproc */,
-				687A4D011D353D30007828DC /* README.md */,
-			);
-			path = opencv2;
-			sourceTree = "<group>";
-		};
-		687A4CF31D353D30007828DC /* core */ = {
-			isa = PBXGroup;
-			children = (
-				687A4CF41D353D30007828DC /* core.hpp */,
-				687A4CF51D353D30007828DC /* core_c.h */,
-				687A4CF61D353D30007828DC /* eigen.hpp */,
-				687A4CF71D353D30007828DC /* internal.hpp */,
-				687A4CF81D353D30007828DC /* mat.hpp */,
-				687A4CF91D353D30007828DC /* operations.hpp */,
-				687A4CFA1D353D30007828DC /* types_c.h */,
-				687A4CFB1D353D30007828DC /* version.hpp */,
-				687A4CFC1D353D30007828DC /* wimage.hpp */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		687A4CFD1D353D30007828DC /* imgproc */ = {
-			isa = PBXGroup;
-			children = (
-				687A4CFE1D353D30007828DC /* imgproc.hpp */,
-				687A4CFF1D353D30007828DC /* imgproc_c.h */,
-				687A4D001D353D30007828DC /* types_c.h */,
-			);
-			path = imgproc;
-			sourceTree = "<group>";
-		};
-		687A4D061D353D30007828DC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				687A4D071D353D30007828DC /* cardio_logo_220.png */,
-				687A4D081D353D30007828DC /* pp_h_rgb.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		687A4D091D353D30007828DC /* scan */ = {
 			isa = PBXGroup;
 			children = (
@@ -1663,6 +1385,26 @@
 				687A4D1A1D353D30007828DC /* scan_analytics.h */,
 			);
 			path = scan;
+			sourceTree = "<group>";
+		};
+		687A4DB11D36342D007828DC /* icc */ = {
+			isa = PBXGroup;
+			children = (
+				687A4DB21D36342D007828DC /* CardIOCGGeometry.h */,
+				687A4DB31D36342D007828DC /* CardIOGPUFilter.h */,
+				687A4DB41D36342D007828DC /* CardIOGPUFilter.m */,
+				687A4DB51D36342D007828DC /* CardIOGPURenderer.h */,
+				687A4DB61D36342D007828DC /* CardIOGPURenderer.mm */,
+				687A4DB71D36342D007828DC /* CardIOGPUShaders.h */,
+				687A4DB81D36342D007828DC /* CardIOGPUTransformFilter.h */,
+				687A4DB91D36342D007828DC /* CardIOGPUTransformFilter.m */,
+				687A4DBA1D36342D007828DC /* CardIOIplImage.h */,
+				687A4DBB1D36342D007828DC /* CardIOIplImage.mm */,
+				687A4DBC1D36342D007828DC /* CardIOMacros.h */,
+				687A4DBD1D36342D007828DC /* CardIOMacros.m */,
+			);
+			name = icc;
+			path = "cardio-ios/icc";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1723,54 +1465,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687A4D381D353D30007828DC /* c-rows.png in Resources */,
-				687A4D271D353D30007828DC /* build_opencv.sh in Resources */,
 				687A4D871D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D681D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D591D353D30007828DC /* PardisoSupport in Resources */,
 				687A4D701D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D421D353D30007828DC /* g-3-regrid.png in Resources */,
 				687A4D551D353D30007828DC /* LeastSquares in Resources */,
-				687A4D3D1D353D30007828DC /* f-1-groups.png in Resources */,
 				687A4D7C1D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D3E1D353D30007828DC /* f-2-groups.png in Resources */,
 				687A4D4B1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D741D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D8B1D353D30007828DC /* SuperLUSupport in Resources */,
 				687A4D861D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D291D353D30007828DC /* dmz.pyx in Resources */,
 				687A4D761D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D3C1D353D30007828DC /* e-3-char_rects.png in Resources */,
-				687A4D3A1D353D30007828DC /* e-1-char_rects.png in Resources */,
-				687A4D441D353D30007828DC /* h-2-optimize.png in Resources */,
-				687A4D431D353D30007828DC /* h-1-optimize.png in Resources */,
 				687A4D791D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D2B1D353D30007828DC /* notes.txt in Resources */,
-				687A4DA01D353D30007828DC /* pp_h_rgb.png in Resources */,
 				687A4D891D353D30007828DC /* StdList in Resources */,
 				687A4D621D353D30007828DC /* SPQRSupport in Resources */,
 				687A4D541D353D30007828DC /* Jacobi in Resources */,
-				687A4D2A1D353D30007828DC /* dmz.pyxbld in Resources */,
 				687A4D561D353D30007828DC /* LU in Resources */,
 				687A4D521D353D30007828DC /* Householder in Resources */,
 				687A4D851D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D451D353D30007828DC /* h-3-optimize.png in Resources */,
 				687A4D731D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D5A1D353D30007828DC /* PaStiXSupport in Resources */,
 				687A4D4F1D353D30007828DC /* Eigen2Support in Resources */,
-				687A4D3B1D353D30007828DC /* e-2-char_rects.png in Resources */,
 				687A4D531D353D30007828DC /* IterativeLinearSolvers in Resources */,
 				687A4D581D353D30007828DC /* OrderingMethods in Resources */,
 				687A4D7E1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D5F1D353D30007828DC /* SparseCore in Resources */,
 				687A4D611D353D30007828DC /* SparseQR in Resources */,
-				687A4D361D353D30007828DC /* a-original.png in Resources */,
-				687A4D371D353D30007828DC /* b-sobel.png in Resources */,
-				687A4D9E1D353D30007828DC /* requirements.txt in Resources */,
 				687A4D5C1D353D30007828DC /* QtAlignedMalloc in Resources */,
 				687A4D641D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D4C1D353D30007828DC /* Core in Resources */,
-				687A4D1B1D353D30007828DC /* .gitignore in Resources */,
 				687A4D781D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D4A1D353D30007828DC /* CholmodSupport in Resources */,
 				687A4D6F1D353D30007828DC /* CMakeLists.txt in Resources */,
@@ -1780,38 +1503,28 @@
 				687A4D7D1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687836C41D33922F003AB627 /* LaunchScreen.storyboard in Resources */,
 				687A4D7A1D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D401D353D30007828DC /* g-1-regrid.png in Resources */,
 				687A4D6C1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687836C11D33922F003AB627 /* Assets.xcassets in Resources */,
-				687A4D8E1D353D30007828DC /* fabfile.py in Resources */,
-				687A4D261D353D30007828DC /* __init__.py in Resources */,
-				687A4D3F1D353D30007828DC /* f-3-groups.png in Resources */,
 				687A4D721D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D801D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D461D353D30007828DC /* i-slash-magnified.png in Resources */,
 				687A4D651D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D571D353D30007828DC /* MetisSupport in Resources */,
 				687A4D6A1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D8D1D353D30007828DC /* UmfPackSupport in Resources */,
 				687A4D811D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D821D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D281D353D30007828DC /* dmz.html in Resources */,
 				687A4D661D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D481D353D30007828DC /* Array in Resources */,
-				687A4D391D353D30007828DC /* d-stripes.png in Resources */,
 				687A4D8C1D353D30007828DC /* SVD in Resources */,
 				687A4D8A1D353D30007828DC /* StdVector in Resources */,
 				687836BF1D33922F003AB627 /* Main.storyboard in Resources */,
-				687A4D2E1D353D30007828DC /* .tgitconfig in Resources */,
 				687A4D6E1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D4D1D353D30007828DC /* Dense in Resources */,
 				687A4D771D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D471D353D30007828DC /* i-slash.png in Resources */,
 				687A4D4E1D353D30007828DC /* Eigen in Resources */,
 				687A4D7F1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D6D1D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D691D353D30007828DC /* CMakeLists.txt in Resources */,
-				687A4D9F1D353D30007828DC /* cardio_logo_220.png in Resources */,
 				687A4D491D353D30007828DC /* Cholesky in Resources */,
 				687A4D671D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D711D353D30007828DC /* CMakeLists.txt in Resources */,
@@ -1819,7 +1532,6 @@
 				687A4D631D353D30007828DC /* CMakeLists.txt in Resources */,
 				687A4D5E1D353D30007828DC /* SparseCholesky in Resources */,
 				687A4D5D1D353D30007828DC /* Sparse in Resources */,
-				687A4D411D353D30007828DC /* g-2-regrid.png in Resources */,
 				687A4D5B1D353D30007828DC /* QR in Resources */,
 				687A4D511D353D30007828DC /* Geometry in Resources */,
 				687A4D501D353D30007828DC /* Eigenvalues in Resources */,
@@ -1837,8 +1549,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				687836BC1D33922F003AB627 /* ViewController.m in Sources */,
+				687A4DBE1D36342D007828DC /* CardIOGPUFilter.m in Sources */,
 				687A4D9A1D353D30007828DC /* mz_ios.mm in Sources */,
+				687A4DC11D36342D007828DC /* CardIOIplImage.mm in Sources */,
+				687A4DC21D36342D007828DC /* CardIOMacros.m in Sources */,
+				687A4DBF1D36342D007828DC /* CardIOGPURenderer.mm in Sources */,
 				687836D71D33982E003AB627 /* VideoStream.mm in Sources */,
+				687A4DC01D36342D007828DC /* CardIOGPUTransformFilter.m in Sources */,
 				687836DB1D339CE6003AB627 /* Utilities.m in Sources */,
 				687836B91D33922F003AB627 /* AppDelegate.m in Sources */,
 				687836D11D339800003AB627 /* CameraView.mm in Sources */,
@@ -1963,20 +1680,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/opencv",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/opencv";
 				GCC_INPUT_FILETYPE = automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/dmz";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cardio-ios/Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/lib/dmz",
+					"$(SRCROOT)/lib/opencv",
+				);
 				INFOPLIST_FILE = "cardio-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/dmz/cython_dmz/opencv/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-c++11-narrowing",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.cardio-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1990,18 +1710,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/opencv",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/opencv";
 				GCC_INPUT_FILETYPE = automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/dmz";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cardio-ios/Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/lib/dmz",
+					"$(SRCROOT)/lib/opencv",
+				);
 				INFOPLIST_FILE = "cardio-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/dmz/cython_dmz/opencv/lib",
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-c++11-narrowing",
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.cardio-ios";

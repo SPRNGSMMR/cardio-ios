@@ -26,6 +26,8 @@
 @property(nonatomic, strong, readwrite) CardInfo *cardInfo; // Will be nil unless frame processing completes with a successful scan
 @property(nonatomic, strong, readwrite) CardScanner *scanner;
 
+@property(nonatomic, assign, readonly) float focusScore;
+
 @property(assign) dmz_context *dmz;
 
 @end

@@ -24,4 +24,8 @@
     return info;
 }
 
+- (NSString *)description {
+    return self.numbers;
+}
+
 @end

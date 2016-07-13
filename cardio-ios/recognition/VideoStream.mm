@@ -99,6 +99,8 @@
     dispatch_queue_t queue = dispatch_queue_create("io.card.ios.videostream", NULL);
     [self.videoOutput setSampleBufferDelegate:self queue:queue];
     
+    [self.captureSession addOutput:self.videoOutput];
+    
     return YES;
 }
 

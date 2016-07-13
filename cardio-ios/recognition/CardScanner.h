@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-//#include "scan.h"
+#import "scan.h"
 
 @class CardInfo;
-@class IplImageUtils;
+@class CardIOIplImage;
 
 @interface CardScanner : NSObject
 
-- (void)addFrame:(IplImageUtils *)frame focusScore:(float)focusScore brightnessScore:(float)brightnessScore isoSpeed:(NSInteger)isoSpeed shutterSpeed:(float)shutterSpeed;
+- (void)addFrame:(CardIOIplImage *)frame focusScore:(float)focusScore brightnessScore:(float)brightnessScore isoSpeed:(NSInteger)isoSpeed shutterSpeed:(float)shutterSpeed;
 - (BOOL)complete;
 
 // these properties are intentionally (superstitiously, anyhow) atomic -- card scanners get passed around between threads
