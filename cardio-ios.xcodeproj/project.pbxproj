@@ -90,8 +90,7 @@
 		687A4D8D1D353D30007828DC /* UmfPackSupport in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD41D353D2F007828DC /* UmfPackSupport */; };
 		687A4D9A1D353D30007828DC /* mz_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4CF01D353D30007828DC /* mz_ios.mm */; };
 		687A4DC41D3644A1007828DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687A4DC31D3644A1007828DC /* opencv2.framework */; };
-		68BC32451D36A5D00068726D /* cardio_ios_static.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68BC32441D36A5D00068726D /* cardio_ios_static.h */; };
-		68BC32471D36A5D00068726D /* cardio_ios_static.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32461D36A5D00068726D /* cardio_ios_static.m */; };
+		68BC32451D36A5D00068726D /* CardIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68BC32441D36A5D00068726D /* CardIO.h */; };
 		68BC329F1D36A6060068726D /* CardIOCGGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32831D36A6060068726D /* CardIOCGGeometry.h */; };
 		68BC32A01D36A6060068726D /* CardIOGPUFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32841D36A6060068726D /* CardIOGPUFilter.h */; };
 		68BC32A11D36A6060068726D /* CardIOGPUFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32851D36A6060068726D /* CardIOGPUFilter.m */; };
@@ -144,7 +143,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				68BC32451D36A5D00068726D /* cardio_ios_static.h in CopyFiles */,
+				68BC32451D36A5D00068726D /* CardIO.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,8 +558,7 @@
 		687A4D1A1D353D30007828DC /* scan_analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scan_analytics.h; sourceTree = "<group>"; };
 		687A4DC31D3644A1007828DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = lib/opencv/opencv2.framework; sourceTree = "<group>"; };
 		68BC32421D36A5D00068726D /* libcardio-ios-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcardio-ios-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68BC32441D36A5D00068726D /* cardio_ios_static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardio_ios_static.h; sourceTree = "<group>"; };
-		68BC32461D36A5D00068726D /* cardio_ios_static.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cardio_ios_static.m; sourceTree = "<group>"; };
+		68BC32441D36A5D00068726D /* CardIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		68BC32581D36A5DE0068726D /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = src/Prefix.pch; sourceTree = "<group>"; };
 		68BC32831D36A6060068726D /* CardIOCGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCGGeometry.h; sourceTree = "<group>"; };
 		68BC32841D36A6060068726D /* CardIOGPUFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUFilter.h; sourceTree = "<group>"; };
@@ -1425,8 +1423,7 @@
 		68BC32431D36A5D00068726D /* cardio-ios-static */ = {
 			isa = PBXGroup;
 			children = (
-				68BC32441D36A5D00068726D /* cardio_ios_static.h */,
-				68BC32461D36A5D00068726D /* cardio_ios_static.m */,
+				68BC32441D36A5D00068726D /* CardIO.h */,
 			);
 			path = "cardio-ios-static";
 			sourceTree = "<group>";
@@ -1704,7 +1701,6 @@
 				68BC32AC1D36A6060068726D /* CardIOIplImage.mm in Sources */,
 				68BC32AF1D36A6060068726D /* CardIOMacros.m in Sources */,
 				68BC32C41D36A6060068726D /* Utilities.m in Sources */,
-				68BC32471D36A5D00068726D /* cardio_ios_static.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1949,6 +1945,7 @@
 				68BC324A1D36A5D00068726D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
