@@ -3,3 +3,8 @@
 Basic implementation of the [card.io-dmz](https://github.com/card-io/card.io-dmz) intended to be implement in [react-native-cardio](https://github.com/SPRNGSMMR/react-native-cardio). IOS support only.
 
 It follows [card.io-iOS-source](https://github.com/card-io/card.io-iOS-source).
+
+## Requirements
+
+- Download [OpenCV](http://opencv.org/) for IOS
+- Copy `opencv2.framework` to `lib/opencv`.
