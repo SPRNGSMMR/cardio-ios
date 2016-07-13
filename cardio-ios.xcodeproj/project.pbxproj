@@ -134,6 +134,8 @@
 		68BC32C71D36A62A0068726D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837141D33EED6003AB627 /* CoreVideo.framework */; };
 		68BC32C81D36A62A0068726D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837121D33EECA003AB627 /* CoreMedia.framework */; };
 		68BC32C91D36A62A0068726D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687836DC1D33A294003AB627 /* AudioToolbox.framework */; };
+		68BC32CA1D36A8CB0068726D /* mz_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4CF01D353D30007828DC /* mz_ios.mm */; };
+		68BC32CB1D36A8CE0068726D /* dmz_all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687A4B4D1D353D2F007828DC /* dmz_all.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1693,10 +1695,12 @@
 				68BC32B51D36A6060068726D /* CardInfo.mm in Sources */,
 				68BC32A21D36A6060068726D /* CardIOGPUFilter.m in Sources */,
 				68BC32BE1D36A6060068726D /* VideoFrame.mm in Sources */,
+				68BC32CB1D36A8CE0068726D /* dmz_all.cpp in Sources */,
 				68BC32B81D36A6060068726D /* CardScanner.mm in Sources */,
 				68BC32C11D36A6060068726D /* VideoStream.mm in Sources */,
 				68BC32A91D36A6060068726D /* CardIOGPUTransformFilter.m in Sources */,
 				68BC32A51D36A6060068726D /* CardIOGPURenderer.mm in Sources */,
+				68BC32CA1D36A8CB0068726D /* mz_ios.mm in Sources */,
 				68BC32BB1D36A6060068726D /* CardView.mm in Sources */,
 				68BC32AC1D36A6060068726D /* CardIOIplImage.mm in Sources */,
 				68BC32AF1D36A6060068726D /* CardIOMacros.m in Sources */,
