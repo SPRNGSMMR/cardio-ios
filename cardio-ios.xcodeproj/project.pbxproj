@@ -13,17 +13,10 @@
 		687836BF1D33922F003AB627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687836BD1D33922F003AB627 /* Main.storyboard */; };
 		687836C11D33922F003AB627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687836C01D33922F003AB627 /* Assets.xcassets */; };
 		687836C41D33922F003AB627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687836C21D33922F003AB627 /* LaunchScreen.storyboard */; };
-		687836CE1D3397DF003AB627 /* CardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687836CD1D3397DF003AB627 /* CardView.mm */; };
-		687836D11D339800003AB627 /* CameraView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687836D01D339800003AB627 /* CameraView.mm */; };
-		687836D41D33981A003AB627 /* VideoFrame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687836D31D33981A003AB627 /* VideoFrame.mm */; };
-		687836D71D33982E003AB627 /* VideoStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687836D61D33982E003AB627 /* VideoStream.mm */; };
-		687836DB1D339CE6003AB627 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 687836DA1D339CE6003AB627 /* Utilities.m */; };
 		687836DD1D33A294003AB627 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687836DC1D33A294003AB627 /* AudioToolbox.framework */; };
 		687837131D33EECA003AB627 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837121D33EECA003AB627 /* CoreMedia.framework */; };
 		687837151D33EED6003AB627 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837141D33EED6003AB627 /* CoreVideo.framework */; };
 		687837171D33EEE4003AB627 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837161D33EEE4003AB627 /* AVFoundation.framework */; };
-		6878371C1D34EAD6003AB627 /* CardScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6878371B1D34EAD6003AB627 /* CardScanner.mm */; };
-		6878371F1D35118E003AB627 /* CardInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6878371E1D35118E003AB627 /* CardInfo.mm */; };
 		687A4D311D353D30007828DC /* dmz_all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687A4B4D1D353D2F007828DC /* dmz_all.cpp */; };
 		687A4D481D353D30007828DC /* Array in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B6C1D353D2F007828DC /* Array */; };
 		687A4D491D353D30007828DC /* Cholesky in Resources */ = {isa = PBXBuildFile; fileRef = 687A4B6D1D353D2F007828DC /* Cholesky */; };
@@ -96,13 +89,66 @@
 		687A4D8C1D353D30007828DC /* SVD in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD31D353D2F007828DC /* SVD */; };
 		687A4D8D1D353D30007828DC /* UmfPackSupport in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD41D353D2F007828DC /* UmfPackSupport */; };
 		687A4D9A1D353D30007828DC /* mz_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4CF01D353D30007828DC /* mz_ios.mm */; };
-		687A4DBE1D36342D007828DC /* CardIOGPUFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DB41D36342D007828DC /* CardIOGPUFilter.m */; };
-		687A4DBF1D36342D007828DC /* CardIOGPURenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DB61D36342D007828DC /* CardIOGPURenderer.mm */; };
-		687A4DC01D36342D007828DC /* CardIOGPUTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DB91D36342D007828DC /* CardIOGPUTransformFilter.m */; };
-		687A4DC11D36342D007828DC /* CardIOIplImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DBB1D36342D007828DC /* CardIOIplImage.mm */; };
-		687A4DC21D36342D007828DC /* CardIOMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A4DBD1D36342D007828DC /* CardIOMacros.m */; };
 		687A4DC41D3644A1007828DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687A4DC31D3644A1007828DC /* opencv2.framework */; };
+		68BC32451D36A5D00068726D /* cardio_ios_static.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68BC32441D36A5D00068726D /* cardio_ios_static.h */; };
+		68BC32471D36A5D00068726D /* cardio_ios_static.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32461D36A5D00068726D /* cardio_ios_static.m */; };
+		68BC329F1D36A6060068726D /* CardIOCGGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32831D36A6060068726D /* CardIOCGGeometry.h */; };
+		68BC32A01D36A6060068726D /* CardIOGPUFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32841D36A6060068726D /* CardIOGPUFilter.h */; };
+		68BC32A11D36A6060068726D /* CardIOGPUFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32851D36A6060068726D /* CardIOGPUFilter.m */; };
+		68BC32A21D36A6060068726D /* CardIOGPUFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32851D36A6060068726D /* CardIOGPUFilter.m */; };
+		68BC32A31D36A6060068726D /* CardIOGPURenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32861D36A6060068726D /* CardIOGPURenderer.h */; };
+		68BC32A41D36A6060068726D /* CardIOGPURenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32871D36A6060068726D /* CardIOGPURenderer.mm */; };
+		68BC32A51D36A6060068726D /* CardIOGPURenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32871D36A6060068726D /* CardIOGPURenderer.mm */; };
+		68BC32A61D36A6060068726D /* CardIOGPUShaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32881D36A6060068726D /* CardIOGPUShaders.h */; };
+		68BC32A71D36A6060068726D /* CardIOGPUTransformFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32891D36A6060068726D /* CardIOGPUTransformFilter.h */; };
+		68BC32A81D36A6060068726D /* CardIOGPUTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC328A1D36A6060068726D /* CardIOGPUTransformFilter.m */; };
+		68BC32A91D36A6060068726D /* CardIOGPUTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC328A1D36A6060068726D /* CardIOGPUTransformFilter.m */; };
+		68BC32AA1D36A6060068726D /* CardIOIplImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC328B1D36A6060068726D /* CardIOIplImage.h */; };
+		68BC32AB1D36A6060068726D /* CardIOIplImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC328C1D36A6060068726D /* CardIOIplImage.mm */; };
+		68BC32AC1D36A6060068726D /* CardIOIplImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC328C1D36A6060068726D /* CardIOIplImage.mm */; };
+		68BC32AD1D36A6060068726D /* CardIOMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC328D1D36A6060068726D /* CardIOMacros.h */; };
+		68BC32AE1D36A6060068726D /* CardIOMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC328E1D36A6060068726D /* CardIOMacros.m */; };
+		68BC32AF1D36A6060068726D /* CardIOMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC328E1D36A6060068726D /* CardIOMacros.m */; };
+		68BC32B01D36A6060068726D /* CameraView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32901D36A6060068726D /* CameraView.h */; };
+		68BC32B11D36A6060068726D /* CameraView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32911D36A6060068726D /* CameraView.mm */; };
+		68BC32B21D36A6060068726D /* CameraView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32911D36A6060068726D /* CameraView.mm */; };
+		68BC32B31D36A6060068726D /* CardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32921D36A6060068726D /* CardInfo.h */; };
+		68BC32B41D36A6060068726D /* CardInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32931D36A6060068726D /* CardInfo.mm */; };
+		68BC32B51D36A6060068726D /* CardInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32931D36A6060068726D /* CardInfo.mm */; };
+		68BC32B61D36A6060068726D /* CardScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32941D36A6060068726D /* CardScanner.h */; };
+		68BC32B71D36A6060068726D /* CardScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32951D36A6060068726D /* CardScanner.mm */; };
+		68BC32B81D36A6060068726D /* CardScanner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32951D36A6060068726D /* CardScanner.mm */; };
+		68BC32B91D36A6060068726D /* CardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32961D36A6060068726D /* CardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68BC32BA1D36A6060068726D /* CardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32971D36A6060068726D /* CardView.mm */; };
+		68BC32BB1D36A6060068726D /* CardView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32971D36A6060068726D /* CardView.mm */; };
+		68BC32BC1D36A6060068726D /* VideoFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32981D36A6060068726D /* VideoFrame.h */; };
+		68BC32BD1D36A6060068726D /* VideoFrame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32991D36A6060068726D /* VideoFrame.mm */; };
+		68BC32BE1D36A6060068726D /* VideoFrame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32991D36A6060068726D /* VideoFrame.mm */; };
+		68BC32BF1D36A6060068726D /* VideoStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC329A1D36A6060068726D /* VideoStream.h */; };
+		68BC32C01D36A6060068726D /* VideoStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC329B1D36A6060068726D /* VideoStream.mm */; };
+		68BC32C11D36A6060068726D /* VideoStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC329B1D36A6060068726D /* VideoStream.mm */; };
+		68BC32C21D36A6060068726D /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC329D1D36A6060068726D /* Utilities.h */; };
+		68BC32C31D36A6060068726D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC329E1D36A6060068726D /* Utilities.m */; };
+		68BC32C41D36A6060068726D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC329E1D36A6060068726D /* Utilities.m */; };
+		68BC32C51D36A62A0068726D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687A4DC31D3644A1007828DC /* opencv2.framework */; };
+		68BC32C61D36A62A0068726D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837161D33EEE4003AB627 /* AVFoundation.framework */; };
+		68BC32C71D36A62A0068726D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837141D33EED6003AB627 /* CoreVideo.framework */; };
+		68BC32C81D36A62A0068726D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837121D33EECA003AB627 /* CoreMedia.framework */; };
+		68BC32C91D36A62A0068726D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687836DC1D33A294003AB627 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68BC32401D36A5D00068726D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				68BC32451D36A5D00068726D /* cardio_ios_static.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		687836B11D33922F003AB627 /* cardio-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cardio-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,24 +161,10 @@
 		687836C01D33922F003AB627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687836C31D33922F003AB627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		687836C51D33922F003AB627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		687836CC1D3397DF003AB627 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardView.h; path = "cardio-ios/recognition/CardView.h"; sourceTree = "<group>"; };
-		687836CD1D3397DF003AB627 /* CardView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CardView.mm; path = "cardio-ios/recognition/CardView.mm"; sourceTree = "<group>"; };
-		687836CF1D339800003AB627 /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraView.h; path = "cardio-ios/recognition/CameraView.h"; sourceTree = "<group>"; };
-		687836D01D339800003AB627 /* CameraView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CameraView.mm; path = "cardio-ios/recognition/CameraView.mm"; sourceTree = "<group>"; };
-		687836D21D33981A003AB627 /* VideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoFrame.h; path = "cardio-ios/recognition/VideoFrame.h"; sourceTree = "<group>"; };
-		687836D31D33981A003AB627 /* VideoFrame.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VideoFrame.mm; path = "cardio-ios/recognition/VideoFrame.mm"; sourceTree = "<group>"; };
-		687836D51D33982E003AB627 /* VideoStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoStream.h; path = "cardio-ios/recognition/VideoStream.h"; sourceTree = "<group>"; };
-		687836D61D33982E003AB627 /* VideoStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VideoStream.mm; path = "cardio-ios/recognition/VideoStream.mm"; sourceTree = "<group>"; };
-		687836D91D339CE6003AB627 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = "cardio-ios/utils/Utilities.h"; sourceTree = "<group>"; };
-		687836DA1D339CE6003AB627 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = "cardio-ios/utils/Utilities.m"; sourceTree = "<group>"; };
 		687836DC1D33A294003AB627 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		687837121D33EECA003AB627 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		687837141D33EED6003AB627 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		687837161D33EEE4003AB627 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		6878371A1D34EAD6003AB627 /* CardScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardScanner.h; path = "cardio-ios/recognition/CardScanner.h"; sourceTree = "<group>"; };
-		6878371B1D34EAD6003AB627 /* CardScanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CardScanner.mm; path = "cardio-ios/recognition/CardScanner.mm"; sourceTree = "<group>"; };
-		6878371D1D35118E003AB627 /* CardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardInfo.h; path = "cardio-ios/recognition/CardInfo.h"; sourceTree = "<group>"; };
-		6878371E1D35118E003AB627 /* CardInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CardInfo.mm; path = "cardio-ios/recognition/CardInfo.mm"; sourceTree = "<group>"; };
 		687A4B121D353D2F007828DC /* compile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compile.h; sourceTree = "<group>"; };
 		687A4B151D353D2F007828DC /* canny.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = canny.cpp; sourceTree = "<group>"; };
 		687A4B161D353D2F007828DC /* canny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = canny.h; sourceTree = "<group>"; };
@@ -525,20 +557,37 @@
 		687A4D181D353D30007828DC /* scan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scan.h; sourceTree = "<group>"; };
 		687A4D191D353D30007828DC /* scan_analytics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scan_analytics.cpp; sourceTree = "<group>"; };
 		687A4D1A1D353D30007828DC /* scan_analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scan_analytics.h; sourceTree = "<group>"; };
-		687A4DB01D363252007828DC /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		687A4DB21D36342D007828DC /* CardIOCGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCGGeometry.h; sourceTree = "<group>"; };
-		687A4DB31D36342D007828DC /* CardIOGPUFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUFilter.h; sourceTree = "<group>"; };
-		687A4DB41D36342D007828DC /* CardIOGPUFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOGPUFilter.m; sourceTree = "<group>"; };
-		687A4DB51D36342D007828DC /* CardIOGPURenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPURenderer.h; sourceTree = "<group>"; };
-		687A4DB61D36342D007828DC /* CardIOGPURenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardIOGPURenderer.mm; sourceTree = "<group>"; };
-		687A4DB71D36342D007828DC /* CardIOGPUShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUShaders.h; sourceTree = "<group>"; };
-		687A4DB81D36342D007828DC /* CardIOGPUTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUTransformFilter.h; sourceTree = "<group>"; };
-		687A4DB91D36342D007828DC /* CardIOGPUTransformFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOGPUTransformFilter.m; sourceTree = "<group>"; };
-		687A4DBA1D36342D007828DC /* CardIOIplImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOIplImage.h; sourceTree = "<group>"; };
-		687A4DBB1D36342D007828DC /* CardIOIplImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardIOIplImage.mm; sourceTree = "<group>"; };
-		687A4DBC1D36342D007828DC /* CardIOMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOMacros.h; sourceTree = "<group>"; };
-		687A4DBD1D36342D007828DC /* CardIOMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOMacros.m; sourceTree = "<group>"; };
 		687A4DC31D3644A1007828DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = lib/opencv/opencv2.framework; sourceTree = "<group>"; };
+		68BC32421D36A5D00068726D /* libcardio-ios-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcardio-ios-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BC32441D36A5D00068726D /* cardio_ios_static.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardio_ios_static.h; sourceTree = "<group>"; };
+		68BC32461D36A5D00068726D /* cardio_ios_static.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cardio_ios_static.m; sourceTree = "<group>"; };
+		68BC32581D36A5DE0068726D /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = src/Prefix.pch; sourceTree = "<group>"; };
+		68BC32831D36A6060068726D /* CardIOCGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCGGeometry.h; sourceTree = "<group>"; };
+		68BC32841D36A6060068726D /* CardIOGPUFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUFilter.h; sourceTree = "<group>"; };
+		68BC32851D36A6060068726D /* CardIOGPUFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOGPUFilter.m; sourceTree = "<group>"; };
+		68BC32861D36A6060068726D /* CardIOGPURenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPURenderer.h; sourceTree = "<group>"; };
+		68BC32871D36A6060068726D /* CardIOGPURenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardIOGPURenderer.mm; sourceTree = "<group>"; };
+		68BC32881D36A6060068726D /* CardIOGPUShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUShaders.h; sourceTree = "<group>"; };
+		68BC32891D36A6060068726D /* CardIOGPUTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOGPUTransformFilter.h; sourceTree = "<group>"; };
+		68BC328A1D36A6060068726D /* CardIOGPUTransformFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOGPUTransformFilter.m; sourceTree = "<group>"; };
+		68BC328B1D36A6060068726D /* CardIOIplImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOIplImage.h; sourceTree = "<group>"; };
+		68BC328C1D36A6060068726D /* CardIOIplImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardIOIplImage.mm; sourceTree = "<group>"; };
+		68BC328D1D36A6060068726D /* CardIOMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOMacros.h; sourceTree = "<group>"; };
+		68BC328E1D36A6060068726D /* CardIOMacros.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIOMacros.m; sourceTree = "<group>"; };
+		68BC32901D36A6060068726D /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
+		68BC32911D36A6060068726D /* CameraView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraView.mm; sourceTree = "<group>"; };
+		68BC32921D36A6060068726D /* CardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardInfo.h; sourceTree = "<group>"; };
+		68BC32931D36A6060068726D /* CardInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardInfo.mm; sourceTree = "<group>"; };
+		68BC32941D36A6060068726D /* CardScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardScanner.h; sourceTree = "<group>"; };
+		68BC32951D36A6060068726D /* CardScanner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardScanner.mm; sourceTree = "<group>"; };
+		68BC32961D36A6060068726D /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		68BC32971D36A6060068726D /* CardView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardView.mm; sourceTree = "<group>"; };
+		68BC32981D36A6060068726D /* VideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFrame.h; sourceTree = "<group>"; };
+		68BC32991D36A6060068726D /* VideoFrame.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoFrame.mm; sourceTree = "<group>"; };
+		68BC329A1D36A6060068726D /* VideoStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoStream.h; sourceTree = "<group>"; };
+		68BC329B1D36A6060068726D /* VideoStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoStream.mm; sourceTree = "<group>"; };
+		68BC329D1D36A6060068726D /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		68BC329E1D36A6060068726D /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -554,19 +603,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68BC323F1D36A5D00068726D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BC32C51D36A62A0068726D /* opencv2.framework in Frameworks */,
+				68BC32C61D36A62A0068726D /* AVFoundation.framework in Frameworks */,
+				68BC32C71D36A62A0068726D /* CoreVideo.framework in Frameworks */,
+				68BC32C81D36A62A0068726D /* CoreMedia.framework in Frameworks */,
+				68BC32C91D36A62A0068726D /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		687836A81D33922F003AB627 = {
 			isa = PBXGroup;
 			children = (
-				687A4DB11D36342D007828DC /* icc */,
 				687A4B101D353D2F007828DC /* dmz */,
 				687836DE1D33B74E003AB627 /* frameworks */,
-				687836D81D339CC5003AB627 /* utils */,
-				687836CB1D339797003AB627 /* recognition */,
 				687836B31D33922F003AB627 /* cardio-ios */,
+				68BC32431D36A5D00068726D /* cardio-ios-static */,
 				687836B21D33922F003AB627 /* Products */,
+				68BC32581D36A5DE0068726D /* Prefix.pch */,
+				68BC32821D36A6060068726D /* icc */,
+				68BC328F1D36A6060068726D /* recognition */,
+				68BC329C1D36A6060068726D /* utils */,
 			);
 			sourceTree = "<group>";
 		};
@@ -574,6 +637,7 @@
 			isa = PBXGroup;
 			children = (
 				687836B11D33922F003AB627 /* cardio-ios.app */,
+				68BC32421D36A5D00068726D /* libcardio-ios-static.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -581,7 +645,6 @@
 		687836B31D33922F003AB627 /* cardio-ios */ = {
 			isa = PBXGroup;
 			children = (
-				687A4DB01D363252007828DC /* Prefix.pch */,
 				687836B71D33922F003AB627 /* AppDelegate.h */,
 				687836B81D33922F003AB627 /* AppDelegate.m */,
 				687836BA1D33922F003AB627 /* ViewController.h */,
@@ -601,34 +664,6 @@
 				687836B51D33922F003AB627 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		687836CB1D339797003AB627 /* recognition */ = {
-			isa = PBXGroup;
-			children = (
-				687836CC1D3397DF003AB627 /* CardView.h */,
-				687836CD1D3397DF003AB627 /* CardView.mm */,
-				687836CF1D339800003AB627 /* CameraView.h */,
-				687836D01D339800003AB627 /* CameraView.mm */,
-				687836D21D33981A003AB627 /* VideoFrame.h */,
-				687836D31D33981A003AB627 /* VideoFrame.mm */,
-				687836D51D33982E003AB627 /* VideoStream.h */,
-				687836D61D33982E003AB627 /* VideoStream.mm */,
-				6878371A1D34EAD6003AB627 /* CardScanner.h */,
-				6878371B1D34EAD6003AB627 /* CardScanner.mm */,
-				6878371D1D35118E003AB627 /* CardInfo.h */,
-				6878371E1D35118E003AB627 /* CardInfo.mm */,
-			);
-			name = recognition;
-			sourceTree = "<group>";
-		};
-		687836D81D339CC5003AB627 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				687836D91D339CE6003AB627 /* Utilities.h */,
-				687836DA1D339CE6003AB627 /* Utilities.m */,
-			);
-			name = utils;
 			sourceTree = "<group>";
 		};
 		687836DE1D33B74E003AB627 /* frameworks */ = {
@@ -1387,27 +1422,90 @@
 			path = scan;
 			sourceTree = "<group>";
 		};
-		687A4DB11D36342D007828DC /* icc */ = {
+		68BC32431D36A5D00068726D /* cardio-ios-static */ = {
 			isa = PBXGroup;
 			children = (
-				687A4DB21D36342D007828DC /* CardIOCGGeometry.h */,
-				687A4DB31D36342D007828DC /* CardIOGPUFilter.h */,
-				687A4DB41D36342D007828DC /* CardIOGPUFilter.m */,
-				687A4DB51D36342D007828DC /* CardIOGPURenderer.h */,
-				687A4DB61D36342D007828DC /* CardIOGPURenderer.mm */,
-				687A4DB71D36342D007828DC /* CardIOGPUShaders.h */,
-				687A4DB81D36342D007828DC /* CardIOGPUTransformFilter.h */,
-				687A4DB91D36342D007828DC /* CardIOGPUTransformFilter.m */,
-				687A4DBA1D36342D007828DC /* CardIOIplImage.h */,
-				687A4DBB1D36342D007828DC /* CardIOIplImage.mm */,
-				687A4DBC1D36342D007828DC /* CardIOMacros.h */,
-				687A4DBD1D36342D007828DC /* CardIOMacros.m */,
+				68BC32441D36A5D00068726D /* cardio_ios_static.h */,
+				68BC32461D36A5D00068726D /* cardio_ios_static.m */,
+			);
+			path = "cardio-ios-static";
+			sourceTree = "<group>";
+		};
+		68BC32821D36A6060068726D /* icc */ = {
+			isa = PBXGroup;
+			children = (
+				68BC32831D36A6060068726D /* CardIOCGGeometry.h */,
+				68BC32841D36A6060068726D /* CardIOGPUFilter.h */,
+				68BC32851D36A6060068726D /* CardIOGPUFilter.m */,
+				68BC32861D36A6060068726D /* CardIOGPURenderer.h */,
+				68BC32871D36A6060068726D /* CardIOGPURenderer.mm */,
+				68BC32881D36A6060068726D /* CardIOGPUShaders.h */,
+				68BC32891D36A6060068726D /* CardIOGPUTransformFilter.h */,
+				68BC328A1D36A6060068726D /* CardIOGPUTransformFilter.m */,
+				68BC328B1D36A6060068726D /* CardIOIplImage.h */,
+				68BC328C1D36A6060068726D /* CardIOIplImage.mm */,
+				68BC328D1D36A6060068726D /* CardIOMacros.h */,
+				68BC328E1D36A6060068726D /* CardIOMacros.m */,
 			);
 			name = icc;
-			path = "cardio-ios/icc";
+			path = src/icc;
+			sourceTree = "<group>";
+		};
+		68BC328F1D36A6060068726D /* recognition */ = {
+			isa = PBXGroup;
+			children = (
+				68BC32901D36A6060068726D /* CameraView.h */,
+				68BC32911D36A6060068726D /* CameraView.mm */,
+				68BC32921D36A6060068726D /* CardInfo.h */,
+				68BC32931D36A6060068726D /* CardInfo.mm */,
+				68BC32941D36A6060068726D /* CardScanner.h */,
+				68BC32951D36A6060068726D /* CardScanner.mm */,
+				68BC32961D36A6060068726D /* CardView.h */,
+				68BC32971D36A6060068726D /* CardView.mm */,
+				68BC32981D36A6060068726D /* VideoFrame.h */,
+				68BC32991D36A6060068726D /* VideoFrame.mm */,
+				68BC329A1D36A6060068726D /* VideoStream.h */,
+				68BC329B1D36A6060068726D /* VideoStream.mm */,
+			);
+			name = recognition;
+			path = src/recognition;
+			sourceTree = "<group>";
+		};
+		68BC329C1D36A6060068726D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				68BC329D1D36A6060068726D /* Utilities.h */,
+				68BC329E1D36A6060068726D /* Utilities.m */,
+			);
+			name = utils;
+			path = src/utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68BC32811D36A5FF0068726D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BC32B91D36A6060068726D /* CardView.h in Headers */,
+				68BC32A71D36A6060068726D /* CardIOGPUTransformFilter.h in Headers */,
+				68BC32C21D36A6060068726D /* Utilities.h in Headers */,
+				68BC32B61D36A6060068726D /* CardScanner.h in Headers */,
+				68BC32BF1D36A6060068726D /* VideoStream.h in Headers */,
+				68BC32A61D36A6060068726D /* CardIOGPUShaders.h in Headers */,
+				68BC32BC1D36A6060068726D /* VideoFrame.h in Headers */,
+				68BC32B31D36A6060068726D /* CardInfo.h in Headers */,
+				68BC329F1D36A6060068726D /* CardIOCGGeometry.h in Headers */,
+				68BC32A31D36A6060068726D /* CardIOGPURenderer.h in Headers */,
+				68BC32AD1D36A6060068726D /* CardIOMacros.h in Headers */,
+				68BC32AA1D36A6060068726D /* CardIOIplImage.h in Headers */,
+				68BC32B01D36A6060068726D /* CameraView.h in Headers */,
+				68BC32A01D36A6060068726D /* CardIOGPUFilter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		687836B01D33922F003AB627 /* cardio-ios */ = {
@@ -1427,6 +1525,24 @@
 			productReference = 687836B11D33922F003AB627 /* cardio-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
+		68BC32411D36A5D00068726D /* cardio-ios-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68BC32481D36A5D00068726D /* Build configuration list for PBXNativeTarget "cardio-ios-static" */;
+			buildPhases = (
+				68BC323E1D36A5D00068726D /* Sources */,
+				68BC323F1D36A5D00068726D /* Frameworks */,
+				68BC32401D36A5D00068726D /* CopyFiles */,
+				68BC32811D36A5FF0068726D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cardio-ios-static";
+			productName = "cardio-ios-static";
+			productReference = 68BC32421D36A5D00068726D /* libcardio-ios-static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1439,6 +1555,9 @@
 					687836B01D33922F003AB627 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2WLPVDJ48G;
+					};
+					68BC32411D36A5D00068726D = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -1456,6 +1575,7 @@
 			projectRoot = "";
 			targets = (
 				687836B01D33922F003AB627 /* cardio-ios */,
+				68BC32411D36A5D00068726D /* cardio-ios-static */,
 			);
 		};
 /* End PBXProject section */
@@ -1548,23 +1668,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BC32A11D36A6060068726D /* CardIOGPUFilter.m in Sources */,
+				68BC32B41D36A6060068726D /* CardInfo.mm in Sources */,
 				687836BC1D33922F003AB627 /* ViewController.m in Sources */,
-				687A4DBE1D36342D007828DC /* CardIOGPUFilter.m in Sources */,
+				68BC32AB1D36A6060068726D /* CardIOIplImage.mm in Sources */,
+				68BC32BA1D36A6060068726D /* CardView.mm in Sources */,
 				687A4D9A1D353D30007828DC /* mz_ios.mm in Sources */,
-				687A4DC11D36342D007828DC /* CardIOIplImage.mm in Sources */,
-				687A4DC21D36342D007828DC /* CardIOMacros.m in Sources */,
-				687A4DBF1D36342D007828DC /* CardIOGPURenderer.mm in Sources */,
-				687836D71D33982E003AB627 /* VideoStream.mm in Sources */,
-				687A4DC01D36342D007828DC /* CardIOGPUTransformFilter.m in Sources */,
-				687836DB1D339CE6003AB627 /* Utilities.m in Sources */,
+				68BC32B11D36A6060068726D /* CameraView.mm in Sources */,
+				68BC32B71D36A6060068726D /* CardScanner.mm in Sources */,
+				68BC32AE1D36A6060068726D /* CardIOMacros.m in Sources */,
+				68BC32C01D36A6060068726D /* VideoStream.mm in Sources */,
+				68BC32A41D36A6060068726D /* CardIOGPURenderer.mm in Sources */,
 				687836B91D33922F003AB627 /* AppDelegate.m in Sources */,
-				687836D11D339800003AB627 /* CameraView.mm in Sources */,
-				6878371C1D34EAD6003AB627 /* CardScanner.mm in Sources */,
-				687836CE1D3397DF003AB627 /* CardView.mm in Sources */,
-				6878371F1D35118E003AB627 /* CardInfo.mm in Sources */,
+				68BC32BD1D36A6060068726D /* VideoFrame.mm in Sources */,
+				68BC32A81D36A6060068726D /* CardIOGPUTransformFilter.m in Sources */,
 				687836B61D33922F003AB627 /* main.m in Sources */,
-				687836D41D33981A003AB627 /* VideoFrame.mm in Sources */,
+				68BC32C31D36A6060068726D /* Utilities.m in Sources */,
 				687A4D311D353D30007828DC /* dmz_all.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68BC323E1D36A5D00068726D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BC32B21D36A6060068726D /* CameraView.mm in Sources */,
+				68BC32B51D36A6060068726D /* CardInfo.mm in Sources */,
+				68BC32A21D36A6060068726D /* CardIOGPUFilter.m in Sources */,
+				68BC32BE1D36A6060068726D /* VideoFrame.mm in Sources */,
+				68BC32B81D36A6060068726D /* CardScanner.mm in Sources */,
+				68BC32C11D36A6060068726D /* VideoStream.mm in Sources */,
+				68BC32A91D36A6060068726D /* CardIOGPUTransformFilter.m in Sources */,
+				68BC32A51D36A6060068726D /* CardIOGPURenderer.mm in Sources */,
+				68BC32BB1D36A6060068726D /* CardView.mm in Sources */,
+				68BC32AC1D36A6060068726D /* CardIOIplImage.mm in Sources */,
+				68BC32AF1D36A6060068726D /* CardIOMacros.m in Sources */,
+				68BC32C41D36A6060068726D /* Utilities.m in Sources */,
+				68BC32471D36A5D00068726D /* cardio_ios_static.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1683,7 +1823,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/opencv";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cardio-ios/Prefix.pch";
+				GCC_PREFIX_HEADER = src/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/lib/dmz",
 					"$(SRCROOT)/lib/opencv",
@@ -1713,7 +1853,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/opencv";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cardio-ios/Prefix.pch";
+				GCC_PREFIX_HEADER = src/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/lib/dmz",
 					"$(SRCROOT)/lib/opencv",
@@ -1730,6 +1870,54 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.cardio-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		68BC32491D36A5D00068726D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/opencv",
+				);
+				GCC_PREFIX_HEADER = src/Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/lib/dmz",
+					"$(SRCROOT)/lib/opencv",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-c++11-narrowing",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68BC324A1D36A5D00068726D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib/opencv",
+				);
+				GCC_PREFIX_HEADER = src/Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/lib/dmz",
+					"$(SRCROOT)/lib/opencv",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-c++11-narrowing",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1753,6 +1941,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		68BC32481D36A5D00068726D /* Build configuration list for PBXNativeTarget "cardio-ios-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68BC32491D36A5D00068726D /* Debug */,
+				68BC324A1D36A5D00068726D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
