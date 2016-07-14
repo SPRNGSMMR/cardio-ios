@@ -1,0 +1,18 @@
+{
+  "name": "cardio-ios",
+  "version": "0.1.0",
+  "description": "card.io implementation intended to be implement in react-native-cardio",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SPRNGSMMR/cardio-ios.git"
+  },
+  "author": "Sylvain Reucherand <sr@springsummer.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SPRNGSMMR/cardio-ios/issues"
+  },
+  "homepage": "https://github.com/SPRNGSMMR/cardio-ios#readme"
+}
