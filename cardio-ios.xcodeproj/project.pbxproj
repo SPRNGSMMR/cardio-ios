@@ -89,7 +89,6 @@
 		687A4D8C1D353D30007828DC /* SVD in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD31D353D2F007828DC /* SVD */; };
 		687A4D8D1D353D30007828DC /* UmfPackSupport in Resources */ = {isa = PBXBuildFile; fileRef = 687A4CD41D353D2F007828DC /* UmfPackSupport */; };
 		687A4D9A1D353D30007828DC /* mz_ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687A4CF01D353D30007828DC /* mz_ios.mm */; };
-		687A4DC41D3644A1007828DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687A4DC31D3644A1007828DC /* opencv2.framework */; };
 		68BC32451D36A5D00068726D /* CardIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68BC32441D36A5D00068726D /* CardIO.h */; };
 		68BC329F1D36A6060068726D /* CardIOCGGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32831D36A6060068726D /* CardIOCGGeometry.h */; };
 		68BC32A01D36A6060068726D /* CardIOGPUFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32841D36A6060068726D /* CardIOGPUFilter.h */; };
@@ -129,7 +128,6 @@
 		68BC32C21D36A6060068726D /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC329D1D36A6060068726D /* Utilities.h */; };
 		68BC32C31D36A6060068726D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC329E1D36A6060068726D /* Utilities.m */; };
 		68BC32C41D36A6060068726D /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC329E1D36A6060068726D /* Utilities.m */; };
-		68BC32C51D36A62A0068726D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687A4DC31D3644A1007828DC /* opencv2.framework */; };
 		68BC32C61D36A62A0068726D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837161D33EEE4003AB627 /* AVFoundation.framework */; };
 		68BC32C71D36A62A0068726D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837141D33EED6003AB627 /* CoreVideo.framework */; };
 		68BC32C81D36A62A0068726D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687837121D33EECA003AB627 /* CoreMedia.framework */; };
@@ -558,7 +556,6 @@
 		687A4D181D353D30007828DC /* scan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scan.h; sourceTree = "<group>"; };
 		687A4D191D353D30007828DC /* scan_analytics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scan_analytics.cpp; sourceTree = "<group>"; };
 		687A4D1A1D353D30007828DC /* scan_analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scan_analytics.h; sourceTree = "<group>"; };
-		687A4DC31D3644A1007828DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = lib/opencv/opencv2.framework; sourceTree = "<group>"; };
 		68BC32421D36A5D00068726D /* libcardio-ios-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcardio-ios-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC32441D36A5D00068726D /* CardIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		68BC32581D36A5DE0068726D /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = src/Prefix.pch; sourceTree = "<group>"; };
@@ -595,7 +592,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687A4DC41D3644A1007828DC /* opencv2.framework in Frameworks */,
 				687837171D33EEE4003AB627 /* AVFoundation.framework in Frameworks */,
 				687837151D33EED6003AB627 /* CoreVideo.framework in Frameworks */,
 				687837131D33EECA003AB627 /* CoreMedia.framework in Frameworks */,
@@ -607,7 +603,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BC32C51D36A62A0068726D /* opencv2.framework in Frameworks */,
 				68BC32C61D36A62A0068726D /* AVFoundation.framework in Frameworks */,
 				68BC32C71D36A62A0068726D /* CoreVideo.framework in Frameworks */,
 				68BC32C81D36A62A0068726D /* CoreMedia.framework in Frameworks */,
@@ -669,7 +664,6 @@
 		687836DE1D33B74E003AB627 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				687A4DC31D3644A1007828DC /* opencv2.framework */,
 				687837161D33EEE4003AB627 /* AVFoundation.framework */,
 				687837141D33EED6003AB627 /* CoreVideo.framework */,
 				687837121D33EECA003AB627 /* CoreMedia.framework */,
@@ -1820,13 +1814,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/opencv";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = src/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/lib/dmz",
-					"$(SRCROOT)/lib/opencv",
+					"$(SRCROOT)/lib/opencv/include",
 				);
 				INFOPLIST_FILE = "cardio-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1837,7 +1831,10 @@
 					"$(OTHER_CFLAGS)",
 					"-Wno-c++11-narrowing",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/lib/opencv/lib/libopencv_core.a",
+					"$(SRCROOT)/lib/opencv/lib/libopencv_imgproc.a",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.cardio-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1850,13 +1847,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/lib/opencv";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = src/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/lib/dmz",
-					"$(SRCROOT)/lib/opencv",
+					"$(SRCROOT)/lib/opencv/include",
 				);
 				INFOPLIST_FILE = "cardio-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1866,7 +1863,10 @@
 					"$(OTHER_CFLAGS)",
 					"-Wno-c++11-narrowing",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/lib/opencv/lib/libopencv_core.a",
+					"$(SRCROOT)/lib/opencv/lib/libopencv_imgproc.a",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.cardio-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1876,20 +1876,21 @@
 		68BC32491D36A5D00068726D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/opencv",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = src/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/lib/dmz",
-					"$(SRCROOT)/lib/opencv",
+					"$(SRCROOT)/lib/opencv/include",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wno-c++11-narrowing",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/lib/opencv/lib/libopencv_core.a",
+					"$(SRCROOT)/lib/opencv/lib/libopencv_imgproc.a",
+				);
+				OTHER_LIBTOOLFLAGS = "$(SRCROOT)/lib/opencv/lib/libopencv_core.a $(SRCROOT)/lib/opencv/lib/libopencv_imgproc.a";
 				PRIVATE_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
@@ -1900,20 +1901,21 @@
 		68BC324A1D36A5D00068726D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib/opencv",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREFIX_HEADER = src/Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/lib/dmz",
-					"$(SRCROOT)/lib/opencv",
+					"$(SRCROOT)/lib/opencv/include",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wno-c++11-narrowing",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/lib/opencv/lib/libopencv_core.a",
+					"$(SRCROOT)/lib/opencv/lib/libopencv_imgproc.a",
+				);
+				OTHER_LIBTOOLFLAGS = "$(SRCROOT)/lib/opencv/lib/libopencv_core.a $(SRCROOT)/lib/opencv/lib/libopencv_imgproc.a";
 				PRIVATE_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";

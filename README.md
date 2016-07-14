@@ -6,5 +6,5 @@ It follows [card.io-iOS-source](https://github.com/card-io/card.io-iOS-source).
 
 ## Requirements
 
-- Download [OpenCV](http://opencv.org/) for IOS
-- Copy `opencv2.framework` to `lib/opencv`.
+- [OpenCV](http://opencv.org/) as a static library in `lib/opencv/`
+
