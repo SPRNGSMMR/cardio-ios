@@ -129,7 +129,9 @@
 #pragma mark - CardIOVideoStreamDelegate methods
 
 - (void)videoStream:(VideoStream *)stream didProcessFrame:(VideoFrame *)frame {
-    [self.delegate didReceiveFocusScore:frame.focusScore];
+    if ([self.delegate respondsToSelector:@selector(didReceiveFocusScore:)]) {
+        [self.delegate didReceiveFocusScore:frame.focusScore];
+    }
     
     if (frame.scanner.complete) {
         [self stopSession];
