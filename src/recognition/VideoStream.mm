@@ -53,6 +53,9 @@
 
 - (void)dealloc {
     [self stopSession];
+    
+    dmz_context_destroy(dmz);
+    dmz = nil;
 }
 
 #pragma mark - Session
@@ -180,6 +183,8 @@
         [self removeInputAndOutput];
         
         self.isRunning = NO;
+        
+        dispatch_semaphore_signal(self.cameraConfigurationSemaphore);
     }
 }
 
