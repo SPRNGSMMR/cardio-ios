@@ -111,7 +111,7 @@
 		68BC32B01D36A6060068726D /* CameraView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32901D36A6060068726D /* CameraView.h */; };
 		68BC32B11D36A6060068726D /* CameraView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32911D36A6060068726D /* CameraView.mm */; };
 		68BC32B21D36A6060068726D /* CameraView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32911D36A6060068726D /* CameraView.mm */; };
-		68BC32B31D36A6060068726D /* CardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32921D36A6060068726D /* CardInfo.h */; };
+		68BC32B31D36A6060068726D /* CardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32921D36A6060068726D /* CardInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68BC32B41D36A6060068726D /* CardInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32931D36A6060068726D /* CardInfo.mm */; };
 		68BC32B51D36A6060068726D /* CardInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68BC32931D36A6060068726D /* CardInfo.mm */; };
 		68BC32B61D36A6060068726D /* CardScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 68BC32941D36A6060068726D /* CardScanner.h */; };
@@ -1488,13 +1488,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				68BC32B91D36A6060068726D /* CardView.h in Headers */,
+				68BC32B31D36A6060068726D /* CardInfo.h in Headers */,
 				68BC32A71D36A6060068726D /* CardIOGPUTransformFilter.h in Headers */,
 				68BC32C21D36A6060068726D /* Utilities.h in Headers */,
 				68BC32B61D36A6060068726D /* CardScanner.h in Headers */,
 				68BC32BF1D36A6060068726D /* VideoStream.h in Headers */,
 				68BC32A61D36A6060068726D /* CardIOGPUShaders.h in Headers */,
 				68BC32BC1D36A6060068726D /* VideoFrame.h in Headers */,
-				68BC32B31D36A6060068726D /* CardInfo.h in Headers */,
 				68BC329F1D36A6060068726D /* CardIOCGGeometry.h in Headers */,
 				68BC32A31D36A6060068726D /* CardIOGPURenderer.h in Headers */,
 				68BC32AD1D36A6060068726D /* CardIOMacros.h in Headers */,
