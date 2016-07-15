@@ -37,8 +37,6 @@
         self.videoStream.previewLayer.contentsGravity = kCAGravityResizeAspectFill;
         self.videoStream.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         
-        self.videoStream.previewLayer.backgroundColor = [UIColor yellowColor].CGColor;
-        
         [self.layer addSublayer:self.videoStream.previewLayer];
         
         if ([self.videoStream hasAutoFocus]) {
