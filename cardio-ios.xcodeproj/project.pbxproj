@@ -1686,7 +1686,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# target who needs to be universal\nTARGET_NAME=cardio-ios-static\n# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${TARGET_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${TARGET_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${TARGET_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+			shellScript = "# globals\nCONFIGURATION=Release\nSCHEME_NAME=cardio-ios-static\nTARGET_NAME=cardio-ios-static\n\nI386_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/i386\nX86_64_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/x86_64\nUNIVERSAL_DIR=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# build default scheme\nxcodebuild -scheme ${SCHEME_NAME} -target ${TARGET_NAME} -configuration ${CONFIGURATION} archive BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# build for both i386 and x86_64 architecture\nxcodebuild OTHER_CFLAGS=\"-fembed-bitcode\" -target ${TARGET_NAME} -arch i386 -sdk iphonesimulator -configuration ${CONFIGURATION} CONFIGURATION_BUILD_DIR=\"${I386_DIR}\"\nxcodebuild OTHER_CFLAGS=\"-fembed-bitcode\" -target ${TARGET_NAME} -arch x86_64 -sdk iphonesimulator -configuration ${CONFIGURATION} CONFIGURATION_BUILD_DIR=\"${X86_64_DIR}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_DIR}\"\n\n# create universal binary file using lipo\nlipo \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${TARGET_NAME}.a\" -arch i386 \"${I386_DIR}/lib${TARGET_NAME}.a\" -arch x86_64 \"${X86_64_DIR}/lib${TARGET_NAME}.a\" -create -output \"${UNIVERSAL_DIR}/lib${TARGET_NAME}.a\"\n\n# copy the header files. Just for convenience\ncp -R \"${I386_DIR}/include\" \"${UNIVERSAL_DIR}/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1985,6 +1985,7 @@
 				20C0A3AC1D76C5DA0015C321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		687836AC1D33922F003AB627 /* Build configuration list for PBXProject "cardio-ios" */ = {
 			isa = XCConfigurationList;
