@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		20C0A3A91D76C5DA0015C321 /* universal-lib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 20C0A3AA1D76C5DA0015C321 /* Build configuration list for PBXAggregateTarget "universal-lib" */;
+			buildPhases = (
+				20C0A3AD1D76C5FD0015C321 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "universal-lib";
+			productName = "universal-lib";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		687836B61D33922F003AB627 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 687836B51D33922F003AB627 /* main.m */; };
 		687836B91D33922F003AB627 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 687836B81D33922F003AB627 /* AppDelegate.m */; };
@@ -1545,6 +1559,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Sylvain Reucherand";
 				TargetAttributes = {
+					20C0A3A91D76C5DA0015C321 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					687836B01D33922F003AB627 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2WLPVDJ48G;
@@ -1569,6 +1586,7 @@
 			targets = (
 				687836B01D33922F003AB627 /* cardio-ios */,
 				68BC32411D36A5D00068726D /* cardio-ios-static */,
+				20C0A3A91D76C5DA0015C321 /* universal-lib */,
 			);
 		};
 /* End PBXProject section */
@@ -1656,6 +1674,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20C0A3AD1D76C5FD0015C321 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# target who needs to be universal\nTARGET_NAME=cardio-ios-static\n# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${TARGET_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${TARGET_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${TARGET_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		687836AD1D33922F003AB627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1724,6 +1758,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		20C0A3AB1D76C5DA0015C321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20C0A3AC1D76C5DA0015C321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		687836C61D33922F003AB627 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1882,6 +1932,7 @@
 					"$(SRCROOT)/lib/dmz",
 					"$(SRCROOT)/lib/opencv/include",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wno-c++11-narrowing",
@@ -1907,6 +1958,7 @@
 					"$(SRCROOT)/lib/dmz",
 					"$(SRCROOT)/lib/opencv/include",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wno-c++11-narrowing",
@@ -1926,6 +1978,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		20C0A3AA1D76C5DA0015C321 /* Build configuration list for PBXAggregateTarget "universal-lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20C0A3AB1D76C5DA0015C321 /* Debug */,
+				20C0A3AC1D76C5DA0015C321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		687836AC1D33922F003AB627 /* Build configuration list for PBXProject "cardio-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
